@@ -1,0 +1,1 @@
+A video stream server based on rtsp/rtp, completed by C, I think the analysis of the rtsp/rtp/h264/aac is worthy of reference but there is still so much to be improved (rtcp, robustness, other format..,), I don't want to touch this code any more and will rewrite by C++ :)
