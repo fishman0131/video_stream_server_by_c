@@ -1,0 +1,2730 @@
+		---------Yearn Media Server---------
+
+Play streams from this server using the URL.
+	rtsp://192.168.152.128:8554/<filename>
+Only H.264 files are supported
+
+
+------------------------------------
+server init is done
+server IP: 192.168.152.128
+server RTSP port: 8554
+
+------------------------------------
+There is client login
+client IP: 172.0.5.182
+There are currently 1 clients.
+
+Start Chandelier.264 stream to 172.0.5.182
+Start Chandelier.aac stream to 172.0.5.182
+------------------------------------
+There is client logout
+client IP: 172.0.5.182
+------------------------------------
+There is client login
+client IP: 172.0.5.182
+There are currently 1 clients.
+
+enerate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x402ED7: ff_avc_find_startcode (AVC.c:42)
+==20753==    by 0x404AD8: find_sps_pps (H264_sdpline.c:44)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4E44D55: pthread_mutex_lock (pthread_mutex_lock.c:71)
+==20753==    by 0x4058A4: client_realease (Server_Client.c:200)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x405755: client_realease (Server_Client.c:176)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4E44D60: pthread_mutex_lock (pthread_mutex_lock.c:75)
+==20753==    by 0x4058A4: client_realease (Server_Client.c:200)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x405755: client_realease (Server_Client.c:176)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4E44DAC: pthread_mutex_lock (pthread_mutex_lock.c:80)
+==20753==    by 0x4058A4: client_realease (Server_Client.c:200)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x405755: client_realease (Server_Client.c:176)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4E44DCA: pthread_mutex_lock (pthread_mutex_lock.c:81)
+==20753==    by 0x4058A4: client_realease (Server_Client.c:200)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x405755: client_realease (Server_Client.c:176)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4E464D4: __pthread_mutex_unlock_usercnt (pthread_mutex_unlock.c:40)
+==20753==    by 0x4E464D4: pthread_mutex_unlock (pthread_mutex_unlock.c:314)
+==20753==    by 0x4058E2: client_realease (Server_Client.c:202)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x405755: client_realease (Server_Client.c:176)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4E464D8: __pthread_mutex_unlock_usercnt (pthread_mutex_unlock.c:44)
+==20753==    by 0x4E464D8: pthread_mutex_unlock (pthread_mutex_unlock.c:314)
+==20753==    by 0x4058E2: client_realease (Server_Client.c:202)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x405755: client_realease (Server_Client.c:176)
+==20753== 
+==20753== Invalid read of size 8
+==20753==    at 0x401C88: parse_RTSP_packet (RTSP_Session_tools.c:22)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5424388 is 232 bytes inside a block of size 240 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405898: client_realease (Server_Client.c:197)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x405483: client_init (Server_Client.c:121)
+==20753==    by 0x403A68: main (main.c:31)
+==20753== 
+==20753== Invalid read of size 8
+==20753==    at 0x401C8F: parse_RTSP_packet (RTSP_Session_tools.c:22)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5424428 is 88 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x40588C: client_realease (Server_Client.c:196)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x4054A7: client_init (Server_Client.c:123)
+==20753==    by 0x403A68: main (main.c:31)
+==20753== 
+==20753== Invalid read of size 1
+==20753==    at 0x4C310E7: strcpy (vg_replace_strmem.c:512)
+==20753==    by 0x401CA4: parse_RTSP_packet (RTSP_Session_tools.c:22)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5424a10 is 0 bytes inside a block of size 4,096 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405879: client_realease (Server_Client.c:195)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x4054E9: client_init (Server_Client.c:125)
+==20753==    by 0x403A68: main (main.c:31)
+==20753== 
+==20753== Invalid read of size 8
+==20753==    at 0x401CAC: parse_RTSP_packet (RTSP_Session_tools.c:23)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5424388 is 232 bytes inside a block of size 240 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405898: client_realease (Server_Client.c:197)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x405483: client_init (Server_Client.c:121)
+==20753==    by 0x403A68: main (main.c:31)
+==20753== 
+==20753== Invalid read of size 8
+==20753==    at 0x401CC5: parse_RTSP_packet (RTSP_Session_tools.c:24)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5424388 is 232 bytes inside a block of size 240 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405898: client_realease (Server_Client.c:197)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x405483: client_init (Server_Client.c:121)
+==20753==    by 0x403A68: main (main.c:31)
+==20753== 
+==20753== Invalid read of size 8
+==20753==    at 0x401CDE: parse_RTSP_packet (RTSP_Session_tools.c:25)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5424388 is 232 bytes inside a block of size 240 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405898: client_realease (Server_Client.c:197)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x405483: client_init (Server_Client.c:121)
+==20753==    by 0x403A68: main (main.c:31)
+==20753== 
+==20753== Invalid read of size 8
+==20753==    at 0x401CF7: parse_RTSP_packet (RTSP_Session_tools.c:29)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5424388 is 232 bytes inside a block of size 240 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405898: client_realease (Server_Client.c:197)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x405483: client_init (Server_Client.c:121)
+==20753==    by 0x403A68: main (main.c:31)
+==20753== 
+==20753== Invalid read of size 4
+==20753==    at 0x401CFE: parse_RTSP_packet (RTSP_Session_tools.c:29)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x54243d8 is 8 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x40588C: client_realease (Server_Client.c:196)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x4054A7: client_init (Server_Client.c:123)
+==20753==    by 0x403A68: main (main.c:31)
+==20753== 
+==20753== Invalid read of size 8
+==20753==    at 0x401E07: parse_RTSP_packet (RTSP_Session_tools.c:45)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5424388 is 232 bytes inside a block of size 240 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405898: client_realease (Server_Client.c:197)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x405483: client_init (Server_Client.c:121)
+==20753==    by 0x403A68: main (main.c:31)
+==20753== 
+==20753== Invalid write of size 4
+==20753==    at 0x401E0E: parse_RTSP_packet (RTSP_Session_tools.c:45)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x54243d8 is 8 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x40588C: client_realease (Server_Client.c:196)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x4054A7: client_init (Server_Client.c:123)
+==20753==    by 0x403A68: main (main.c:31)
+==20753== 
+==20753== Invalid read of size 1
+==20753==    at 0x401E37: parse_RTSP_packet (RTSP_Session_tools.c:50)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x54243dc is 12 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x40588C: client_realease (Server_Client.c:196)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x4054A7: client_init (Server_Client.c:123)
+==20753==    by 0x403A68: main (main.c:31)
+==20753== 
+==20753== Invalid read of size 1
+==20753==    at 0x401E9C: parse_RTSP_packet (RTSP_Session_tools.c:60)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x542440e is 62 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x40588C: client_realease (Server_Client.c:196)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x4054A7: client_init (Server_Client.c:123)
+==20753==    by 0x403A68: main (main.c:31)
+==20753== 
+==20753== Invalid read of size 8
+==20753==    at 0x401F27: parse_RTSP_packet (RTSP_Session_tools.c:71)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5424388 is 232 bytes inside a block of size 240 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405898: client_realease (Server_Client.c:197)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x405483: client_init (Server_Client.c:121)
+==20753==    by 0x403A68: main (main.c:31)
+==20753== 
+==20753== Invalid read of size 8
+==20753==    at 0x401F2E: parse_RTSP_packet (RTSP_Session_tools.c:71)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5424428 is 88 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x40588C: client_realease (Server_Client.c:196)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x4054A7: client_init (Server_Client.c:123)
+==20753==    by 0x403A68: main (main.c:31)
+==20753== 
+==20753== Invalid read of size 1
+==20753==    at 0x4C310E7: strcpy (vg_replace_strmem.c:512)
+==20753==    by 0x401F43: parse_RTSP_packet (RTSP_Session_tools.c:71)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5424a10 is 0 bytes inside a block of size 4,096 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405879: client_realease (Server_Client.c:195)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x4054E9: client_init (Server_Client.c:125)
+==20753==    by 0x403A68: main (main.c:31)
+==20753== 
+==20753== Invalid read of size 1
+==20753==    at 0x401F66: parse_RTSP_packet (RTSP_Session_tools.c:73)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5424418 is 72 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x40588C: client_realease (Server_Client.c:196)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x4054A7: client_init (Server_Client.c:123)
+==20753==    by 0x403A68: main (main.c:31)
+==20753== 
+==20753== Invalid read of size 8
+==20753==    at 0x402081: authenticationOK (RTSP_Session_tools.c:99)
+==20753==    by 0x403C2F: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5424388 is 232 bytes inside a block of size 240 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405898: client_realease (Server_Client.c:197)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x405483: client_init (Server_Client.c:121)
+==20753==    by 0x403A68: main (main.c:31)
+==20753== 
+==20753== Invalid read of size 4
+==20753==    at 0x402088: authenticationOK (RTSP_Session_tools.c:99)
+==20753==    by 0x403C2F: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x54243d8 is 8 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x40588C: client_realease (Server_Client.c:196)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x4054A7: client_init (Server_Client.c:123)
+==20753==    by 0x403A68: main (main.c:31)
+==20753== 
+==20753== Invalid read of size 8
+==20753==    at 0x40209B: authenticationOK (RTSP_Session_tools.c:100)
+==20753==    by 0x403C2F: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5424388 is 232 bytes inside a block of size 240 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405898: client_realease (Server_Client.c:197)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x405483: client_init (Server_Client.c:121)
+==20753==    by 0x403A68: main (main.c:31)
+==20753== 
+==20753== Invalid read of size 1
+==20753==    at 0x4020A6: authenticationOK (RTSP_Session_tools.c:100)
+==20753==    by 0x403C2F: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5424418 is 72 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x40588C: client_realease (Server_Client.c:196)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x4054A7: client_init (Server_Client.c:123)
+==20753==    by 0x403A68: main (main.c:31)
+==20753== 
+==20753== Invalid read of size 8
+==20753==    at 0x404712: tcpRecv (Network.c:54)
+==20753==    by 0x403C05: RTSP_Session_Process (RTSP_Session.c:25)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5424388 is 232 bytes inside a block of size 240 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405898: client_realease (Server_Client.c:197)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x405483: client_init (Server_Client.c:121)
+==20753==    by 0x403A68: main (main.c:31)
+==20753== 
+==20753== Invalid read of size 8
+==20753==    at 0x404719: tcpRecv (Network.c:54)
+==20753==    by 0x403C05: RTSP_Session_Process (RTSP_Session.c:25)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5424428 is 88 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x40588C: client_realease (Server_Client.c:196)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x4054A7: client_init (Server_Client.c:123)
+==20753==    by 0x403A68: main (main.c:31)
+==20753== 
+==20753== Invalid write of size 8
+==20753==    at 0x4C34AFF: memset (vg_replace_strmem.c:1251)
+==20753==    by 0x40472E: tcpRecv (Network.c:54)
+==20753==    by 0x403C05: RTSP_Session_Process (RTSP_Session.c:25)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5424a10 is 0 bytes inside a block of size 4,096 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405879: client_realease (Server_Client.c:195)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x4054E9: client_init (Server_Client.c:125)
+==20753==    by 0x403A68: main (main.c:31)
+==20753== 
+==20753== Invalid write of size 8
+==20753==    at 0x4C34B02: memset (vg_replace_strmem.c:1251)
+==20753==    by 0x40472E: tcpRecv (Network.c:54)
+==20753==    by 0x403C05: RTSP_Session_Process (RTSP_Session.c:25)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5424a18 is 8 bytes inside a block of size 4,096 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405879: client_realease (Server_Client.c:195)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x4054E9: client_init (Server_Client.c:125)
+==20753==    by 0x403A68: main (main.c:31)
+==20753== 
+==20753== Invalid write of size 8
+==20753==    at 0x4C34B06: memset (vg_replace_strmem.c:1251)
+==20753==    by 0x40472E: tcpRecv (Network.c:54)
+==20753==    by 0x403C05: RTSP_Session_Process (RTSP_Session.c:25)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5424a20 is 16 bytes inside a block of size 4,096 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405879: client_realease (Server_Client.c:195)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x4054E9: client_init (Server_Client.c:125)
+==20753==    by 0x403A68: main (main.c:31)
+==20753== 
+==20753== Invalid write of size 8
+==20753==    at 0x4C34B0A: memset (vg_replace_strmem.c:1251)
+==20753==    by 0x40472E: tcpRecv (Network.c:54)
+==20753==    by 0x403C05: RTSP_Session_Process (RTSP_Session.c:25)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5424a28 is 24 bytes inside a block of size 4,096 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405879: client_realease (Server_Client.c:195)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x4054E9: client_init (Server_Client.c:125)
+==20753==    by 0x403A68: main (main.c:31)
+==20753== 
+==20753== Invalid read of size 8
+==20753==    at 0x404733: tcpRecv (Network.c:55)
+==20753==    by 0x403C05: RTSP_Session_Process (RTSP_Session.c:25)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5424388 is 232 bytes inside a block of size 240 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405898: client_realease (Server_Client.c:197)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x405483: client_init (Server_Client.c:121)
+==20753==    by 0x403A68: main (main.c:31)
+==20753== 
+==20753== Invalid read of size 8
+==20753==    at 0x40473A: tcpRecv (Network.c:55)
+==20753==    by 0x403C05: RTSP_Session_Process (RTSP_Session.c:25)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5424428 is 88 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x40588C: client_realease (Server_Client.c:196)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x4054A7: client_init (Server_Client.c:123)
+==20753==    by 0x403A68: main (main.c:31)
+==20753== 
+==20753== Invalid read of size 8
+==20753==    at 0x404742: tcpRecv (Network.c:55)
+==20753==    by 0x403C05: RTSP_Session_Process (RTSP_Session.c:25)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5424388 is 232 bytes inside a block of size 240 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405898: client_realease (Server_Client.c:197)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x405483: client_init (Server_Client.c:121)
+==20753==    by 0x403A68: main (main.c:31)
+==20753== 
+==20753== Invalid read of size 4
+==20753==    at 0x404749: tcpRecv (Network.c:55)
+==20753==    by 0x403C05: RTSP_Session_Process (RTSP_Session.c:25)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x54243d4 is 4 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x40588C: client_realease (Server_Client.c:196)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x4054A7: client_init (Server_Client.c:123)
+==20753==    by 0x403A68: main (main.c:31)
+==20753== 
+==20753== Thread 4:
+==20753== Invalid read of size 8
+==20753==    at 0x40328B: AAC_Entrance (AAC_transport.c:63)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5424380 is 224 bytes inside a block of size 240 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405898: client_realease (Server_Client.c:197)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x405483: client_init (Server_Client.c:121)
+==20753==    by 0x403A68: main (main.c:31)
+==20753== 
+==20753== Invalid read of size 8
+==20753==    at 0x403292: AAC_Entrance (AAC_transport.c:63)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5427310 is 64 bytes inside a block of size 104 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405751: media_class_realease (Server_Client.c:171)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x405317: media_class_init (Server_Client.c:87)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid read of size 1
+==20753==    at 0x402EFF: is_syncword (AAC_transport.c:15)
+==20753==    by 0x4030EC: AAC_Entrance (AAC_transport.c:64)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x60230ac is 108 bytes inside a block of size 5,280,717 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405745: media_class_realease (Server_Client.c:170)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x402544: readFile_internal (RTSP_Session_tools.c:194)
+==20753==    by 0x40278F: readFile (RTSP_Session_tools.c:239)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid read of size 1
+==20753==    at 0x402F0E: is_syncword (AAC_transport.c:15)
+==20753==    by 0x4030EC: AAC_Entrance (AAC_transport.c:64)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x60230ad is 109 bytes inside a block of size 5,280,717 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405745: media_class_realease (Server_Client.c:170)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x402544: readFile_internal (RTSP_Session_tools.c:194)
+==20753==    by 0x40278F: readFile (RTSP_Session_tools.c:239)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid read of size 1
+==20753==    at 0x402F85: get_frame_len (AAC_transport.c:31)
+==20753==    by 0x403117: AAC_Entrance (AAC_transport.c:67)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x60230af is 111 bytes inside a block of size 5,280,717 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405745: media_class_realease (Server_Client.c:170)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x402544: readFile_internal (RTSP_Session_tools.c:194)
+==20753==    by 0x40278F: readFile (RTSP_Session_tools.c:239)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid read of size 1
+==20753==    at 0x402F9B: get_frame_len (AAC_transport.c:32)
+==20753==    by 0x403117: AAC_Entrance (AAC_transport.c:67)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x60230b0 is 112 bytes inside a block of size 5,280,717 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405745: media_class_realease (Server_Client.c:170)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x402544: readFile_internal (RTSP_Session_tools.c:194)
+==20753==    by 0x40278F: readFile (RTSP_Session_tools.c:239)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid read of size 1
+==20753==    at 0x402FAE: get_frame_len (AAC_transport.c:33)
+==20753==    by 0x403117: AAC_Entrance (AAC_transport.c:67)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x60230b1 is 113 bytes inside a block of size 5,280,717 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405745: media_class_realease (Server_Client.c:170)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x402544: readFile_internal (RTSP_Session_tools.c:194)
+==20753==    by 0x40278F: readFile (RTSP_Session_tools.c:239)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid read of size 8
+==20753==    at 0x403120: AAC_Entrance (AAC_transport.c:69)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5427960 is 1,504 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405728: media_class_realease (Server_Client.c:167)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x40533B: media_class_init (Server_Client.c:89)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid write of size 1
+==20753==    at 0x403127: AAC_Entrance (AAC_transport.c:69)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x54273bc is 60 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405728: media_class_realease (Server_Client.c:167)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x40533B: media_class_init (Server_Client.c:89)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid read of size 8
+==20753==    at 0x40312E: AAC_Entrance (AAC_transport.c:70)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5427960 is 1,504 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405728: media_class_realease (Server_Client.c:167)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x40533B: media_class_init (Server_Client.c:89)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid write of size 1
+==20753==    at 0x403139: AAC_Entrance (AAC_transport.c:70)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x54273bd is 61 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405728: media_class_realease (Server_Client.c:167)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x40533B: media_class_init (Server_Client.c:89)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid read of size 8
+==20753==    at 0x403140: AAC_Entrance (AAC_transport.c:71)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5427960 is 1,504 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405728: media_class_realease (Server_Client.c:167)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x40533B: media_class_init (Server_Client.c:89)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid write of size 1
+==20753==    at 0x403158: AAC_Entrance (AAC_transport.c:71)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x54273be is 62 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405728: media_class_realease (Server_Client.c:167)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x40533B: media_class_init (Server_Client.c:89)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid read of size 8
+==20753==    at 0x40315E: AAC_Entrance (AAC_transport.c:72)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5427960 is 1,504 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405728: media_class_realease (Server_Client.c:167)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x40533B: media_class_init (Server_Client.c:89)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid write of size 1
+==20753==    at 0x403170: AAC_Entrance (AAC_transport.c:72)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x54273bf is 63 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405728: media_class_realease (Server_Client.c:167)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x40533B: media_class_init (Server_Client.c:89)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid read of size 8
+==20753==    at 0x403176: AAC_Entrance (AAC_transport.c:73)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5427960 is 1,504 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405728: media_class_realease (Server_Client.c:167)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x40533B: media_class_init (Server_Client.c:89)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid write of size 8
+==20753==    at 0x403185: AAC_Entrance (AAC_transport.c:73)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5427960 is 1,504 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405728: media_class_realease (Server_Client.c:167)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x40533B: media_class_init (Server_Client.c:89)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid read of size 8
+==20753==    at 0x40319C: AAC_Entrance (AAC_transport.c:75)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5427960 is 1,504 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405728: media_class_realease (Server_Client.c:167)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x40533B: media_class_init (Server_Client.c:89)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid read of size 1
+==20753==    at 0x4C32970: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x4031B1: AAC_Entrance (AAC_transport.c:75)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x60230b3 is 115 bytes inside a block of size 5,280,717 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405745: media_class_realease (Server_Client.c:170)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x402544: readFile_internal (RTSP_Session_tools.c:194)
+==20753==    by 0x40278F: readFile (RTSP_Session_tools.c:239)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid write of size 1
+==20753==    at 0x4C32973: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x4031B1: AAC_Entrance (AAC_transport.c:75)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x54273c0 is 64 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405728: media_class_realease (Server_Client.c:167)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x40533B: media_class_init (Server_Client.c:89)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid read of size 1
+==20753==    at 0x4C3297E: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x4031B1: AAC_Entrance (AAC_transport.c:75)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x60230b5 is 117 bytes inside a block of size 5,280,717 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405745: media_class_realease (Server_Client.c:170)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x402544: readFile_internal (RTSP_Session_tools.c:194)
+==20753==    by 0x40278F: readFile (RTSP_Session_tools.c:239)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid read of size 8
+==20753==    at 0x4031B6: AAC_Entrance (AAC_transport.c:77)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5427960 is 1,504 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405728: media_class_realease (Server_Client.c:167)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x40533B: media_class_init (Server_Client.c:89)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid write of size 8
+==20753==    at 0x4031C8: AAC_Entrance (AAC_transport.c:77)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5427960 is 1,504 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405728: media_class_realease (Server_Client.c:167)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x40533B: media_class_init (Server_Client.c:89)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid read of size 2
+==20753==    at 0x4031DB: AAC_Entrance (AAC_transport.c:80)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x542796c is 1,516 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405728: media_class_realease (Server_Client.c:167)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x40533B: media_class_init (Server_Client.c:89)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid write of size 2
+==20753==    at 0x4031E9: AAC_Entrance (AAC_transport.c:80)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x542796c is 1,516 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405728: media_class_realease (Server_Client.c:167)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x40533B: media_class_init (Server_Client.c:89)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid read of size 4
+==20753==    at 0x4031F4: AAC_Entrance (AAC_transport.c:81)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5427970 is 1,520 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405728: media_class_realease (Server_Client.c:167)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x40533B: media_class_init (Server_Client.c:89)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid read of size 8
+==20753==    at 0x4031FE: AAC_Entrance (AAC_transport.c:81)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5424380 is 224 bytes inside a block of size 240 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405898: client_realease (Server_Client.c:197)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x405483: client_init (Server_Client.c:121)
+==20753==    by 0x403A68: main (main.c:31)
+==20753== 
+==20753== Invalid read of size 4
+==20753==    at 0x403205: AAC_Entrance (AAC_transport.c:81)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x542731c is 76 bytes inside a block of size 104 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405751: media_class_realease (Server_Client.c:171)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x405317: media_class_init (Server_Client.c:87)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid write of size 4
+==20753==    at 0x40320E: AAC_Entrance (AAC_transport.c:81)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5427970 is 1,520 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405728: media_class_realease (Server_Client.c:167)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x40533B: media_class_init (Server_Client.c:89)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid read of size 8
+==20753==    at 0x403218: AAC_Entrance (AAC_transport.c:83)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5427960 is 1,504 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405728: media_class_realease (Server_Client.c:167)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x40533B: media_class_init (Server_Client.c:89)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid read of size 8
+==20753==    at 0x403236: AAC_Entrance (AAC_transport.c:83)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5424380 is 224 bytes inside a block of size 240 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405898: client_realease (Server_Client.c:197)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x405483: client_init (Server_Client.c:121)
+==20753==    by 0x403A68: main (main.c:31)
+==20753== 
+==20753== Invalid read of size 8
+==20753==    at 0x405A5B: rtp_SendData (RTP_SendDate.c:12)
+==20753==    by 0x40324B: AAC_Entrance (AAC_transport.c:83)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5427328 is 88 bytes inside a block of size 104 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405751: media_class_realease (Server_Client.c:171)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x405317: media_class_init (Server_Client.c:87)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid read of size 1
+==20753==    at 0x405A78: rtp_SendData (RTP_SendDate.c:15)
+==20753==    by 0x40324B: AAC_Entrance (AAC_transport.c:83)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x54273b1 is 49 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405728: media_class_realease (Server_Client.c:167)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x40533B: media_class_init (Server_Client.c:89)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid write of size 1
+==20753==    at 0x405A81: rtp_SendData (RTP_SendDate.c:15)
+==20753==    by 0x40324B: AAC_Entrance (AAC_transport.c:83)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x54273b1 is 49 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405728: media_class_realease (Server_Client.c:167)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x40533B: media_class_init (Server_Client.c:89)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid read of size 8
+==20753==    at 0x40397F: set_Timestamp (RTP_header.c:46)
+==20753==    by 0x405A8F: rtp_SendData (RTP_SendDate.c:16)
+==20753==    by 0x40324B: AAC_Entrance (AAC_transport.c:83)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5427328 is 88 bytes inside a block of size 104 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405751: media_class_realease (Server_Client.c:171)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x405317: media_class_init (Server_Client.c:87)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid read of size 4
+==20753==    at 0x40398F: set_Timestamp (RTP_header.c:48)
+==20753==    by 0x405A8F: rtp_SendData (RTP_SendDate.c:16)
+==20753==    by 0x40324B: AAC_Entrance (AAC_transport.c:83)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x54273b4 is 52 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405728: media_class_realease (Server_Client.c:167)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x40533B: media_class_init (Server_Client.c:89)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid read of size 8
+==20753==    at 0x4039A0: set_Timestamp (RTP_header.c:49)
+==20753==    by 0x405A8F: rtp_SendData (RTP_SendDate.c:16)
+==20753==    by 0x40324B: AAC_Entrance (AAC_transport.c:83)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5427328 is 88 bytes inside a block of size 104 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405751: media_class_realease (Server_Client.c:171)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x405317: media_class_init (Server_Client.c:87)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid read of size 4
+==20753==    at 0x4039A4: set_Timestamp (RTP_header.c:49)
+==20753==    by 0x405A8F: rtp_SendData (RTP_SendDate.c:16)
+==20753==    by 0x40324B: AAC_Entrance (AAC_transport.c:83)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5427970 is 1,520 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405728: media_class_realease (Server_Client.c:167)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x40533B: media_class_init (Server_Client.c:89)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid write of size 4
+==20753==    at 0x4039BD: set_Timestamp (RTP_header.c:50)
+==20753==    by 0x405A8F: rtp_SendData (RTP_SendDate.c:16)
+==20753==    by 0x40324B: AAC_Entrance (AAC_transport.c:83)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x54273b4 is 52 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405728: media_class_realease (Server_Client.c:167)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x40533B: media_class_init (Server_Client.c:89)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid read of size 8
+==20753==    at 0x40392A: sequence_number_increase (RTP_header.c:30)
+==20753==    by 0x405A9B: rtp_SendData (RTP_SendDate.c:17)
+==20753==    by 0x40324B: AAC_Entrance (AAC_transport.c:83)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5427328 is 88 bytes inside a block of size 104 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405751: media_class_realease (Server_Client.c:171)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x405317: media_class_init (Server_Client.c:87)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid read of size 2
+==20753==    at 0x40393A: sequence_number_increase (RTP_header.c:32)
+==20753==    by 0x405A9B: rtp_SendData (RTP_SendDate.c:17)
+==20753==    by 0x40324B: AAC_Entrance (AAC_transport.c:83)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x54273b2 is 50 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405728: media_class_realease (Server_Client.c:167)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x40533B: media_class_init (Server_Client.c:89)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid write of size 2
+==20753==    at 0x403968: sequence_number_increase (RTP_header.c:34)
+==20753==    by 0x405A9B: rtp_SendData (RTP_SendDate.c:17)
+==20753==    by 0x40324B: AAC_Entrance (AAC_transport.c:83)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x54273b2 is 50 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405728: media_class_realease (Server_Client.c:167)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x40533B: media_class_init (Server_Client.c:89)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid read of size 8
+==20753==    at 0x40495B: udpSendto (Network.c:157)
+==20753==    by 0x405AAC: rtp_SendData (RTP_SendDate.c:20)
+==20753==    by 0x40324B: AAC_Entrance (AAC_transport.c:83)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5427328 is 88 bytes inside a block of size 104 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405751: media_class_realease (Server_Client.c:171)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x405317: media_class_init (Server_Client.c:87)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid read of size 8
+==20753==    at 0x40496D: udpSendto (Network.c:156)
+==20753==    by 0x405AAC: rtp_SendData (RTP_SendDate.c:20)
+==20753==    by 0x40324B: AAC_Entrance (AAC_transport.c:83)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5427328 is 88 bytes inside a block of size 104 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405751: media_class_realease (Server_Client.c:171)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x405317: media_class_init (Server_Client.c:87)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid read of size 8
+==20753==    at 0x404979: udpSendto (Network.c:156)
+==20753==    by 0x405AAC: rtp_SendData (RTP_SendDate.c:20)
+==20753==    by 0x40324B: AAC_Entrance (AAC_transport.c:83)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5427328 is 88 bytes inside a block of size 104 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405751: media_class_realease (Server_Client.c:171)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x405317: media_class_init (Server_Client.c:87)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Invalid read of size 4
+==20753==    at 0x40497D: udpSendto (Network.c:156)
+==20753==    by 0x405AAC: rtp_SendData (RTP_SendDate.c:20)
+==20753==    by 0x40324B: AAC_Entrance (AAC_transport.c:83)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x5427388 is 8 bytes inside a block of size 1,536 free'd
+==20753==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==20753==    by 0x405728: media_class_realease (Server_Client.c:167)
+==20753==    by 0x405810: client_realease (Server_Client.c:189)
+==20753==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==20753==    by 0x403C23: RTSP_Session_Process (RTSP_Session.c:29)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Block was alloc'd at
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x40533B: media_class_init (Server_Client.c:89)
+==20753==    by 0x402762: readFile (RTSP_Session_tools.c:236)
+==20753==    by 0x403E06: handle_DESCRIBE (RTSP_Session.c:88)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== Thread 2:
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x402E49: ff_avc_find_startcode_internal (AVC.c:14)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404AD8: find_sps_pps (H264_sdpline.c:44)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x402E92: ff_avc_find_startcode_internal (AVC.c:32)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404AD8: find_sps_pps (H264_sdpline.c:44)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x402ECD: ff_avc_find_startcode (AVC.c:42)
+==20753==    by 0x404AD8: find_sps_pps (H264_sdpline.c:44)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x404C27: find_sps_pps (H264_sdpline.c:47)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Use of uninitialised value of size 8
+==20753==    at 0x404B06: find_sps_pps (H264_sdpline.c:48)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x404B0B: find_sps_pps (H264_sdpline.c:48)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404D8B: set_H264_Lines (H264_sdpline.c:93)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x402D41: ff_avc_find_startcode_internal (AVC.c:9)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x402D4B: ff_avc_find_startcode_internal (AVC.c:9)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Use of uninitialised value of size 8
+==20753==    at 0x402D06: ff_avc_find_startcode_internal (AVC.c:10)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x402D0B: ff_avc_find_startcode_internal (AVC.c:10)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404D8B: set_H264_Lines (H264_sdpline.c:93)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x402E49: ff_avc_find_startcode_internal (AVC.c:14)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Use of uninitialised value of size 8
+==20753==    at 0x402D5B: ff_avc_find_startcode_internal (AVC.c:15)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x402D77: ff_avc_find_startcode_internal (AVC.c:16)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404D8B: set_H264_Lines (H264_sdpline.c:93)
+==20753== 
+==20753== Use of uninitialised value of size 8
+==20753==    at 0x402D85: ff_avc_find_startcode_internal (AVC.c:17)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x402D8A: ff_avc_find_startcode_internal (AVC.c:17)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404D8B: set_H264_Lines (H264_sdpline.c:93)
+==20753== 
+==20753== Use of uninitialised value of size 8
+==20753==    at 0x402D90: ff_avc_find_startcode_internal (AVC.c:18)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== 
+==20753== More than 100 errors detected.  Subsequent errors
+==20753== will still be recorded, but in less detail than before.
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x402D95: ff_avc_find_startcode_internal (AVC.c:18)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404D8B: set_H264_Lines (H264_sdpline.c:93)
+==20753== 
+==20753== Use of uninitialised value of size 8
+==20753==    at 0x402D9F: ff_avc_find_startcode_internal (AVC.c:18)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x402DA4: ff_avc_find_startcode_internal (AVC.c:18)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404D8B: set_H264_Lines (H264_sdpline.c:93)
+==20753== 
+==20753== Use of uninitialised value of size 8
+==20753==    at 0x402DB7: ff_avc_find_startcode_internal (AVC.c:20)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x402DBC: ff_avc_find_startcode_internal (AVC.c:20)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404D8B: set_H264_Lines (H264_sdpline.c:93)
+==20753== 
+==20753== Use of uninitialised value of size 8
+==20753==    at 0x402DC6: ff_avc_find_startcode_internal (AVC.c:20)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x402DCB: ff_avc_find_startcode_internal (AVC.c:20)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404D8B: set_H264_Lines (H264_sdpline.c:93)
+==20753== 
+==20753== Use of uninitialised value of size 8
+==20753==    at 0x402DE2: ff_avc_find_startcode_internal (AVC.c:23)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x402DE7: ff_avc_find_startcode_internal (AVC.c:23)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404D8B: set_H264_Lines (H264_sdpline.c:93)
+==20753== 
+==20753== Use of uninitialised value of size 8
+==20753==    at 0x402DF1: ff_avc_find_startcode_internal (AVC.c:24)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x402DF6: ff_avc_find_startcode_internal (AVC.c:24)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404D8B: set_H264_Lines (H264_sdpline.c:93)
+==20753== 
+==20753== Use of uninitialised value of size 8
+==20753==    at 0x402E00: ff_avc_find_startcode_internal (AVC.c:24)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x402E05: ff_avc_find_startcode_internal (AVC.c:24)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404D8A: set_H264_Lines (H264_sdpline.c:93)
+==20753== 
+==20753== Use of uninitialised value of size 8
+==20753==    at 0x402E1C: ff_avc_find_startcode_internal (AVC.c:26)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x402E21: ff_avc_find_startcode_internal (AVC.c:26)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404D8A: set_H264_Lines (H264_sdpline.c:93)
+==20753== 
+==20753== Use of uninitialised value of size 8
+==20753==    at 0x402E2B: ff_avc_find_startcode_internal (AVC.c:26)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x402E30: ff_avc_find_startcode_internal (AVC.c:26)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404D8A: set_H264_Lines (H264_sdpline.c:93)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x402ECD: ff_avc_find_startcode (AVC.c:42)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x402ED7: ff_avc_find_startcode (AVC.c:42)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Use of uninitialised value of size 8
+==20753==    at 0x402EE1: ff_avc_find_startcode (AVC.c:42)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Use of uninitialised value of size 8
+==20753==    at 0x404B28: find_sps_pps (H264_sdpline.c:51)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x404B35: find_sps_pps (H264_sdpline.c:52)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404D8B: set_H264_Lines (H264_sdpline.c:93)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x404B9D: find_sps_pps (H264_sdpline.c:59)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404D8B: set_H264_Lines (H264_sdpline.c:93)
+==20753== 
+==20753== Use of uninitialised value of size 8
+==20753==    at 0x402D15: ff_avc_find_startcode_internal (AVC.c:10)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x402D1A: ff_avc_find_startcode_internal (AVC.c:10)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x4019CF: set_media_Lines (SDP_setLines.c:18)
+==20753== 
+==20753== Use of uninitialised value of size 8
+==20753==    at 0x402D24: ff_avc_find_startcode_internal (AVC.c:10)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x402D29: ff_avc_find_startcode_internal (AVC.c:10)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x4019CF: set_media_Lines (SDP_setLines.c:18)
+==20753== 
+==20753== Invalid read of size 1
+==20753==    at 0x402E00: ff_avc_find_startcode_internal (AVC.c:24)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x7f46000 is in a rwx anonymous segment
+==20753== 
+==20753== Invalid read of size 1
+==20753==    at 0x402E1C: ff_avc_find_startcode_internal (AVC.c:26)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x7f46000 is in a rwx anonymous segment
+==20753== 
+==20753== Invalid read of size 4
+==20753==    at 0x402D5B: ff_avc_find_startcode_internal (AVC.c:15)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x7f46000 is in a rwx anonymous segment
+==20753== 
+==20753== Invalid read of size 1
+==20753==    at 0x402D85: ff_avc_find_startcode_internal (AVC.c:17)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x7f46001 is in a rwx anonymous segment
+==20753== 
+==20753== Invalid read of size 1
+==20753==    at 0x402DE2: ff_avc_find_startcode_internal (AVC.c:23)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x7f46003 is in a rwx anonymous segment
+==20753== 
+==20753== Invalid read of size 1
+==20753==    at 0x402DF1: ff_avc_find_startcode_internal (AVC.c:24)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x7f46002 is in a rwx anonymous segment
+==20753== 
+==20753== Invalid read of size 1
+==20753==    at 0x402E2B: ff_avc_find_startcode_internal (AVC.c:26)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x7f46005 is in a rwx anonymous segment
+==20753== 
+==20753== Invalid read of size 1
+==20753==    at 0x402D90: ff_avc_find_startcode_internal (AVC.c:18)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x7f46004 is in a rwx anonymous segment
+==20753== 
+==20753== Invalid read of size 1
+==20753==    at 0x402D9F: ff_avc_find_startcode_internal (AVC.c:18)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x7f46006 is in a rwx anonymous segment
+==20753== 
+==20753== Invalid read of size 1
+==20753==    at 0x402DB7: ff_avc_find_startcode_internal (AVC.c:20)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x7f46006 is in a rwx anonymous segment
+==20753== 
+==20753== Invalid read of size 1
+==20753==    at 0x402DC6: ff_avc_find_startcode_internal (AVC.c:20)
+==20753==    by 0x402EC0: ff_avc_find_startcode (AVC.c:41)
+==20753==    by 0x404B1F: find_sps_pps (H264_sdpline.c:50)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Address 0x7f46007 is in a rwx anonymous segment
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4C2FF23: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x404B6C: find_sps_pps (H264_sdpline.c:54)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4C32603: is_overlap (vg_replace_strmem.c:130)
+==20753==    by 0x4C32603: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404B94: find_sps_pps (H264_sdpline.c:55)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4C3261E: is_overlap (vg_replace_strmem.c:139)
+==20753==    by 0x4C3261E: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404B94: find_sps_pps (H264_sdpline.c:55)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4C32624: is_overlap (vg_replace_strmem.c:142)
+==20753==    by 0x4C32624: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404B94: find_sps_pps (H264_sdpline.c:55)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4C32632: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404B94: find_sps_pps (H264_sdpline.c:55)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4C3267F: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404B94: find_sps_pps (H264_sdpline.c:55)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4C32848: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404B94: find_sps_pps (H264_sdpline.c:55)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4C32922: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404B94: find_sps_pps (H264_sdpline.c:55)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Use of uninitialised value of size 8
+==20753==    at 0x4C32970: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404B94: find_sps_pps (H264_sdpline.c:55)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Use of uninitialised value of size 8
+==20753==    at 0x4C32973: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404B94: find_sps_pps (H264_sdpline.c:55)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4C3297E: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404B94: find_sps_pps (H264_sdpline.c:55)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4C2FF23: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x404BD4: find_sps_pps (H264_sdpline.c:61)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4C32603: is_overlap (vg_replace_strmem.c:130)
+==20753==    by 0x4C32603: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404BFC: find_sps_pps (H264_sdpline.c:62)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4C3261E: is_overlap (vg_replace_strmem.c:139)
+==20753==    by 0x4C3261E: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404BFC: find_sps_pps (H264_sdpline.c:62)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4C3299C: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404BFC: find_sps_pps (H264_sdpline.c:62)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4C3267F: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404BFC: find_sps_pps (H264_sdpline.c:62)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4C32690: is_overlap (vg_replace_strmem.c:139)
+==20753==    by 0x4C32690: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404BFC: find_sps_pps (H264_sdpline.c:62)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4C326A6: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404BFC: find_sps_pps (H264_sdpline.c:62)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4C32848: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404BFC: find_sps_pps (H264_sdpline.c:62)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4C32922: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404BFC: find_sps_pps (H264_sdpline.c:62)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4C32928: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404BFC: find_sps_pps (H264_sdpline.c:62)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Use of uninitialised value of size 8
+==20753==    at 0x4C32940: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404BFC: find_sps_pps (H264_sdpline.c:62)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Use of uninitialised value of size 8
+==20753==    at 0x4C32943: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404BFC: find_sps_pps (H264_sdpline.c:62)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4C3294E: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404BFC: find_sps_pps (H264_sdpline.c:62)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4C32959: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404BFC: find_sps_pps (H264_sdpline.c:62)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4C2FF23: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x404C54: remove_Emulation_Bytes (H264_sdpline.c:72)
+==20753==    by 0x404DF5: set_H264_Lines (H264_sdpline.c:101)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4C32603: is_overlap (vg_replace_strmem.c:130)
+==20753==    by 0x4C32603: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404C73: remove_Emulation_Bytes (H264_sdpline.c:73)
+==20753==    by 0x404DF5: set_H264_Lines (H264_sdpline.c:101)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4C32632: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404C73: remove_Emulation_Bytes (H264_sdpline.c:73)
+==20753==    by 0x404DF5: set_H264_Lines (H264_sdpline.c:101)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4C3287F: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404C73: remove_Emulation_Bytes (H264_sdpline.c:73)
+==20753==    by 0x404DF5: set_H264_Lines (H264_sdpline.c:101)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4C328CD: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404C73: remove_Emulation_Bytes (H264_sdpline.c:73)
+==20753==    by 0x404DF5: set_H264_Lines (H264_sdpline.c:101)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4C328DC: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404C73: remove_Emulation_Bytes (H264_sdpline.c:73)
+==20753==    by 0x404DF5: set_H264_Lines (H264_sdpline.c:101)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4C32914: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404C73: remove_Emulation_Bytes (H264_sdpline.c:73)
+==20753==    by 0x404DF5: set_H264_Lines (H264_sdpline.c:101)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4C32928: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404C73: remove_Emulation_Bytes (H264_sdpline.c:73)
+==20753==    by 0x404DF5: set_H264_Lines (H264_sdpline.c:101)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Use of uninitialised value of size 8
+==20753==    at 0x4C32940: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404C73: remove_Emulation_Bytes (H264_sdpline.c:73)
+==20753==    by 0x404DF5: set_H264_Lines (H264_sdpline.c:101)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Use of uninitialised value of size 8
+==20753==    at 0x4C32943: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404C73: remove_Emulation_Bytes (H264_sdpline.c:73)
+==20753==    by 0x404DF5: set_H264_Lines (H264_sdpline.c:101)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4C3294E: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404C73: remove_Emulation_Bytes (H264_sdpline.c:73)
+==20753==    by 0x404DF5: set_H264_Lines (H264_sdpline.c:101)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4C32959: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404C73: remove_Emulation_Bytes (H264_sdpline.c:73)
+==20753==    by 0x404DF5: set_H264_Lines (H264_sdpline.c:101)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x404D60: remove_Emulation_Bytes (H264_sdpline.c:76)
+==20753==    by 0x404DF5: set_H264_Lines (H264_sdpline.c:101)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x404C95: remove_Emulation_Bytes (H264_sdpline.c:77)
+==20753==    by 0x404DF5: set_H264_Lines (H264_sdpline.c:101)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4C3299C: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404C73: remove_Emulation_Bytes (H264_sdpline.c:73)
+==20753==    by 0x404E08: set_H264_Lines (H264_sdpline.c:102)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4C326A6: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404C73: remove_Emulation_Bytes (H264_sdpline.c:73)
+==20753==    by 0x404E08: set_H264_Lines (H264_sdpline.c:102)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Use of uninitialised value of size 8
+==20753==    at 0x4C328F8: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404C73: remove_Emulation_Bytes (H264_sdpline.c:73)
+==20753==    by 0x404E08: set_H264_Lines (H264_sdpline.c:102)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Use of uninitialised value of size 8
+==20753==    at 0x4C328FB: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404C73: remove_Emulation_Bytes (H264_sdpline.c:73)
+==20753==    by 0x404E08: set_H264_Lines (H264_sdpline.c:102)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x4C32906: memcpy@@GLIBC_2.14 (vg_replace_strmem.c:1034)
+==20753==    by 0x404C73: remove_Emulation_Bytes (H264_sdpline.c:73)
+==20753==    by 0x404E08: set_H264_Lines (H264_sdpline.c:102)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x404D60: remove_Emulation_Bytes (H264_sdpline.c:76)
+==20753==    by 0x404E08: set_H264_Lines (H264_sdpline.c:102)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Conditional jump or move depends on uninitialised value(s)
+==20753==    at 0x404C95: remove_Emulation_Bytes (H264_sdpline.c:77)
+==20753==    by 0x404E08: set_H264_Lines (H264_sdpline.c:102)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753==  Uninitialised value was created by a stack allocation
+==20753==    at 0x404A9E: find_sps_pps (H264_sdpline.c:37)
+==20753== 
+==20753== Invalid read of size 1
+==20753==    at 0x401585: base64_encode (Base64.c:13)
+==20753==    by 0x404F54: set_H264_Lines (H264_sdpline.c:115)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==  Address 0x6b76776c794c6c50 is not stack'd, malloc'd or (recently) free'd
+==20753== 
+==20753== 
+==20753== Process terminating with default action of signal 11 (SIGSEGV)
+==20753==  General Protection Fault
+==20753==    at 0x401585: base64_encode (Base64.c:13)
+==20753==    by 0x404F54: set_H264_Lines (H264_sdpline.c:115)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753== 
+==20753== HEAP SUMMARY:
+==20753==     in use at exit: 8,649,711 bytes in 20 blocks
+==20753==   total heap usage: 66 allocs, 46 frees, 17,334,879 bytes allocated
+==20753== 
+==20753== Thread 1:
+==20753== 272 bytes in 1 blocks are possibly lost in loss record 5 of 19
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x40138A4: allocate_dtv (dl-tls.c:322)
+==20753==    by 0x40138A4: _dl_allocate_tls (dl-tls.c:539)
+==20753==    by 0x4E4326E: allocate_stack (allocatestack.c:588)
+==20753==    by 0x4E4326E: pthread_create@@GLIBC_2.2.5 (pthread_create.c:539)
+==20753==    by 0x4042B5: handle_PLAY (RTSP_Session.c:208)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== 272 bytes in 1 blocks are possibly lost in loss record 6 of 19
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x40138A4: allocate_dtv (dl-tls.c:322)
+==20753==    by 0x40138A4: _dl_allocate_tls (dl-tls.c:539)
+==20753==    by 0x4E4326E: allocate_stack (allocatestack.c:588)
+==20753==    by 0x4E4326E: pthread_create@@GLIBC_2.2.5 (pthread_create.c:539)
+==20753==    by 0x404350: handle_PLAY (RTSP_Session.c:217)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== 544 bytes in 2 blocks are possibly lost in loss record 7 of 19
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x40138A4: allocate_dtv (dl-tls.c:322)
+==20753==    by 0x40138A4: _dl_allocate_tls (dl-tls.c:539)
+==20753==    by 0x4E4326E: allocate_stack (allocatestack.c:588)
+==20753==    by 0x4E4326E: pthread_create@@GLIBC_2.2.5 (pthread_create.c:539)
+==20753==    by 0x403A91: main (main.c:32)
+==20753== 
+==20753== 564 bytes in 1 blocks are definitely lost in loss record 8 of 19
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x404B6C: find_sps_pps (H264_sdpline.c:54)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== 1,000 bytes in 1 blocks are definitely lost in loss record 9 of 19
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x404DBC: set_H264_Lines (H264_sdpline.c:94)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== 1,762 bytes in 1 blocks are definitely lost in loss record 13 of 19
+==20753==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==20753==    by 0x404BD4: find_sps_pps (H264_sdpline.c:61)
+==20753==    by 0x404DE2: set_H264_Lines (H264_sdpline.c:99)
+==20753==    by 0x401A41: set_media_Lines (SDP_setLines.c:25)
+==20753==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==20753==    by 0x403E60: handle_DESCRIBE (RTSP_Session.c:100)
+==20753==    by 0x403C54: RTSP_Session_Process (RTSP_Session.c:38)
+==20753==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==20753== 
+==20753== LEAK SUMMARY:
+==20753==    definitely lost: 3,326 bytes in 3 blocks
+==20753==    indirectly lost: 0 bytes in 0 blocks
+==20753==      possibly lost: 1,088 bytes in 4 blocks
+==20753==    still reachable: 8,645,297 bytes in 13 blocks
+==20753==         suppressed: 0 bytes in 0 blocks
+==20753== Reachable blocks (those to which a pointer was found) are not shown.
+==20753== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==20753== 
+==20753== For counts of detected and suppressed errors, rerun with: -v
+==20753== ERROR SUMMARY: 79740 errors from 191 contexts (suppressed: 0 from 0)

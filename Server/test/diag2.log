@@ -1,0 +1,557 @@
+==22305== Memcheck, a memory error detector
+==22305== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==22305== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==22305== Command: ./MediaServer
+==22305== 
+==22305== Thread 2:
+==22305== Conditional jump or move depends on uninitialised value(s)
+==22305==    at 0x402D97: ff_avc_find_startcode_internal (AVC.c:9)
+==22305==    by 0x402F0C: ff_avc_find_startcode (AVC.c:41)
+==22305==    by 0x4049DA: find_sps_pps (H264_sdpline.c:44)
+==22305==    by 0x404CE4: set_H264_Lines (H264_sdpline.c:100)
+==22305==    by 0x401AB2: set_media_Lines (SDP_setLines.c:36)
+==22305==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==22305==    by 0x403EAC: handle_DESCRIBE (RTSP_Session.c:102)
+==22305==    by 0x403CA0: RTSP_Session_Process (RTSP_Session.c:39)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305== 
+==22305== Conditional jump or move depends on uninitialised value(s)
+==22305==    at 0x402F23: ff_avc_find_startcode (AVC.c:42)
+==22305==    by 0x4049DA: find_sps_pps (H264_sdpline.c:44)
+==22305==    by 0x404CE4: set_H264_Lines (H264_sdpline.c:100)
+==22305==    by 0x401AB2: set_media_Lines (SDP_setLines.c:36)
+==22305==    by 0x401B56: generate_SDP_description (SDP_setLines.c:55)
+==22305==    by 0x403EAC: handle_DESCRIBE (RTSP_Session.c:102)
+==22305==    by 0x403CA0: RTSP_Session_Process (RTSP_Session.c:39)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305== 
+==22305== Conditional jump or move depends on uninitialised value(s)
+==22305==    at 0x4E44D55: pthread_mutex_lock (pthread_mutex_lock.c:71)
+==22305==    by 0x4057A0: client_realease (Server_Client.c:201)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305== 
+==22305== Conditional jump or move depends on uninitialised value(s)
+==22305==    at 0x4E44D60: pthread_mutex_lock (pthread_mutex_lock.c:75)
+==22305==    by 0x4057A0: client_realease (Server_Client.c:201)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305== 
+==22305== Conditional jump or move depends on uninitialised value(s)
+==22305==    at 0x4E44DAC: pthread_mutex_lock (pthread_mutex_lock.c:80)
+==22305==    by 0x4057A0: client_realease (Server_Client.c:201)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305== 
+==22305== Conditional jump or move depends on uninitialised value(s)
+==22305==    at 0x4E44DCA: pthread_mutex_lock (pthread_mutex_lock.c:81)
+==22305==    by 0x4057A0: client_realease (Server_Client.c:201)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305== 
+==22305== Conditional jump or move depends on uninitialised value(s)
+==22305==    at 0x4E464D4: __pthread_mutex_unlock_usercnt (pthread_mutex_unlock.c:40)
+==22305==    by 0x4E464D4: pthread_mutex_unlock (pthread_mutex_unlock.c:314)
+==22305==    by 0x4057DE: client_realease (Server_Client.c:203)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305== 
+==22305== Conditional jump or move depends on uninitialised value(s)
+==22305==    at 0x4E464D8: __pthread_mutex_unlock_usercnt (pthread_mutex_unlock.c:44)
+==22305==    by 0x4E464D8: pthread_mutex_unlock (pthread_mutex_unlock.c:314)
+==22305==    by 0x4057DE: client_realease (Server_Client.c:203)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305== 
+==22305== Invalid read of size 8
+==22305==    at 0x401C88: parse_RTSP_packet (RTSP_Session_tools.c:22)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Address 0x5423788 is 232 bytes inside a block of size 240 free'd
+==22305==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==22305==    by 0x405794: client_realease (Server_Client.c:198)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Block was alloc'd at
+==22305==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==22305==    by 0x405385: client_init (Server_Client.c:121)
+==22305==    by 0x403AB4: main (main.c:31)
+==22305== 
+==22305== Invalid read of size 8
+==22305==    at 0x401C8F: parse_RTSP_packet (RTSP_Session_tools.c:22)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Address 0x5423828 is 88 bytes inside a block of size 1,536 free'd
+==22305==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==22305==    by 0x405788: client_realease (Server_Client.c:197)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Block was alloc'd at
+==22305==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==22305==    by 0x4053A9: client_init (Server_Client.c:123)
+==22305==    by 0x403AB4: main (main.c:31)
+==22305== 
+==22305== Invalid read of size 1
+==22305==    at 0x4C310E7: strcpy (vg_replace_strmem.c:512)
+==22305==    by 0x401CA4: parse_RTSP_packet (RTSP_Session_tools.c:22)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Address 0x5423e10 is 0 bytes inside a block of size 4,096 free'd
+==22305==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==22305==    by 0x405775: client_realease (Server_Client.c:196)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Block was alloc'd at
+==22305==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==22305==    by 0x4053EB: client_init (Server_Client.c:125)
+==22305==    by 0x403AB4: main (main.c:31)
+==22305== 
+==22305== Invalid read of size 8
+==22305==    at 0x401CAC: parse_RTSP_packet (RTSP_Session_tools.c:23)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Address 0x5423788 is 232 bytes inside a block of size 240 free'd
+==22305==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==22305==    by 0x405794: client_realease (Server_Client.c:198)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Block was alloc'd at
+==22305==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==22305==    by 0x405385: client_init (Server_Client.c:121)
+==22305==    by 0x403AB4: main (main.c:31)
+==22305== 
+==22305== Invalid read of size 8
+==22305==    at 0x401CC5: parse_RTSP_packet (RTSP_Session_tools.c:24)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Address 0x5423788 is 232 bytes inside a block of size 240 free'd
+==22305==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==22305==    by 0x405794: client_realease (Server_Client.c:198)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Block was alloc'd at
+==22305==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==22305==    by 0x405385: client_init (Server_Client.c:121)
+==22305==    by 0x403AB4: main (main.c:31)
+==22305== 
+==22305== Invalid read of size 8
+==22305==    at 0x401CDE: parse_RTSP_packet (RTSP_Session_tools.c:25)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Address 0x5423788 is 232 bytes inside a block of size 240 free'd
+==22305==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==22305==    by 0x405794: client_realease (Server_Client.c:198)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Block was alloc'd at
+==22305==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==22305==    by 0x405385: client_init (Server_Client.c:121)
+==22305==    by 0x403AB4: main (main.c:31)
+==22305== 
+==22305== Invalid read of size 8
+==22305==    at 0x401CF7: parse_RTSP_packet (RTSP_Session_tools.c:29)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Address 0x5423788 is 232 bytes inside a block of size 240 free'd
+==22305==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==22305==    by 0x405794: client_realease (Server_Client.c:198)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Block was alloc'd at
+==22305==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==22305==    by 0x405385: client_init (Server_Client.c:121)
+==22305==    by 0x403AB4: main (main.c:31)
+==22305== 
+==22305== Invalid read of size 4
+==22305==    at 0x401CFE: parse_RTSP_packet (RTSP_Session_tools.c:29)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Address 0x54237d8 is 8 bytes inside a block of size 1,536 free'd
+==22305==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==22305==    by 0x405788: client_realease (Server_Client.c:197)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Block was alloc'd at
+==22305==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==22305==    by 0x4053A9: client_init (Server_Client.c:123)
+==22305==    by 0x403AB4: main (main.c:31)
+==22305== 
+==22305== Invalid read of size 8
+==22305==    at 0x401E07: parse_RTSP_packet (RTSP_Session_tools.c:45)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Address 0x5423788 is 232 bytes inside a block of size 240 free'd
+==22305==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==22305==    by 0x405794: client_realease (Server_Client.c:198)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Block was alloc'd at
+==22305==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==22305==    by 0x405385: client_init (Server_Client.c:121)
+==22305==    by 0x403AB4: main (main.c:31)
+==22305== 
+==22305== Invalid write of size 4
+==22305==    at 0x401E0E: parse_RTSP_packet (RTSP_Session_tools.c:45)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Address 0x54237d8 is 8 bytes inside a block of size 1,536 free'd
+==22305==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==22305==    by 0x405788: client_realease (Server_Client.c:197)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Block was alloc'd at
+==22305==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==22305==    by 0x4053A9: client_init (Server_Client.c:123)
+==22305==    by 0x403AB4: main (main.c:31)
+==22305== 
+==22305== Invalid read of size 1
+==22305==    at 0x401E37: parse_RTSP_packet (RTSP_Session_tools.c:50)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Address 0x54237dc is 12 bytes inside a block of size 1,536 free'd
+==22305==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==22305==    by 0x405788: client_realease (Server_Client.c:197)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Block was alloc'd at
+==22305==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==22305==    by 0x4053A9: client_init (Server_Client.c:123)
+==22305==    by 0x403AB4: main (main.c:31)
+==22305== 
+==22305== Invalid read of size 1
+==22305==    at 0x401E9C: parse_RTSP_packet (RTSP_Session_tools.c:62)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Address 0x542380e is 62 bytes inside a block of size 1,536 free'd
+==22305==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==22305==    by 0x405788: client_realease (Server_Client.c:197)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Block was alloc'd at
+==22305==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==22305==    by 0x4053A9: client_init (Server_Client.c:123)
+==22305==    by 0x403AB4: main (main.c:31)
+==22305== 
+==22305== Invalid read of size 8
+==22305==    at 0x401F27: parse_RTSP_packet (RTSP_Session_tools.c:73)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Address 0x5423788 is 232 bytes inside a block of size 240 free'd
+==22305==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==22305==    by 0x405794: client_realease (Server_Client.c:198)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Block was alloc'd at
+==22305==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==22305==    by 0x405385: client_init (Server_Client.c:121)
+==22305==    by 0x403AB4: main (main.c:31)
+==22305== 
+==22305== Invalid read of size 8
+==22305==    at 0x401F2E: parse_RTSP_packet (RTSP_Session_tools.c:73)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Address 0x5423828 is 88 bytes inside a block of size 1,536 free'd
+==22305==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==22305==    by 0x405788: client_realease (Server_Client.c:197)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Block was alloc'd at
+==22305==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==22305==    by 0x4053A9: client_init (Server_Client.c:123)
+==22305==    by 0x403AB4: main (main.c:31)
+==22305== 
+==22305== Invalid read of size 1
+==22305==    at 0x4C310E7: strcpy (vg_replace_strmem.c:512)
+==22305==    by 0x401F43: parse_RTSP_packet (RTSP_Session_tools.c:73)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Address 0x5423e10 is 0 bytes inside a block of size 4,096 free'd
+==22305==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==22305==    by 0x405775: client_realease (Server_Client.c:196)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Block was alloc'd at
+==22305==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==22305==    by 0x4053EB: client_init (Server_Client.c:125)
+==22305==    by 0x403AB4: main (main.c:31)
+==22305== 
+==22305== Invalid read of size 1
+==22305==    at 0x401F66: parse_RTSP_packet (RTSP_Session_tools.c:75)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Address 0x5423818 is 72 bytes inside a block of size 1,536 free'd
+==22305==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==22305==    by 0x405788: client_realease (Server_Client.c:197)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Block was alloc'd at
+==22305==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==22305==    by 0x4053A9: client_init (Server_Client.c:123)
+==22305==    by 0x403AB4: main (main.c:31)
+==22305== 
+==22305== Invalid read of size 8
+==22305==    at 0x402081: authenticationOK (RTSP_Session_tools.c:102)
+==22305==    by 0x403C7B: RTSP_Session_Process (RTSP_Session.c:39)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Address 0x5423788 is 232 bytes inside a block of size 240 free'd
+==22305==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==22305==    by 0x405794: client_realease (Server_Client.c:198)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Block was alloc'd at
+==22305==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==22305==    by 0x405385: client_init (Server_Client.c:121)
+==22305==    by 0x403AB4: main (main.c:31)
+==22305== 
+==22305== Invalid read of size 4
+==22305==    at 0x402088: authenticationOK (RTSP_Session_tools.c:102)
+==22305==    by 0x403C7B: RTSP_Session_Process (RTSP_Session.c:39)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Address 0x54237d8 is 8 bytes inside a block of size 1,536 free'd
+==22305==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==22305==    by 0x405788: client_realease (Server_Client.c:197)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Block was alloc'd at
+==22305==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==22305==    by 0x4053A9: client_init (Server_Client.c:123)
+==22305==    by 0x403AB4: main (main.c:31)
+==22305== 
+==22305== Invalid read of size 8
+==22305==    at 0x40209B: authenticationOK (RTSP_Session_tools.c:103)
+==22305==    by 0x403C7B: RTSP_Session_Process (RTSP_Session.c:39)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Address 0x5423788 is 232 bytes inside a block of size 240 free'd
+==22305==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==22305==    by 0x405794: client_realease (Server_Client.c:198)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Block was alloc'd at
+==22305==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==22305==    by 0x405385: client_init (Server_Client.c:121)
+==22305==    by 0x403AB4: main (main.c:31)
+==22305== 
+==22305== Invalid read of size 1
+==22305==    at 0x4020A6: authenticationOK (RTSP_Session_tools.c:103)
+==22305==    by 0x403C7B: RTSP_Session_Process (RTSP_Session.c:39)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Address 0x5423818 is 72 bytes inside a block of size 1,536 free'd
+==22305==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==22305==    by 0x405788: client_realease (Server_Client.c:197)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Block was alloc'd at
+==22305==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==22305==    by 0x4053A9: client_init (Server_Client.c:123)
+==22305==    by 0x403AB4: main (main.c:31)
+==22305== 
+==22305== Invalid read of size 8
+==22305==    at 0x404614: tcpRecv (Network.c:54)
+==22305==    by 0x403C51: RTSP_Session_Process (RTSP_Session.c:26)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Address 0x5423788 is 232 bytes inside a block of size 240 free'd
+==22305==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==22305==    by 0x405794: client_realease (Server_Client.c:198)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Block was alloc'd at
+==22305==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==22305==    by 0x405385: client_init (Server_Client.c:121)
+==22305==    by 0x403AB4: main (main.c:31)
+==22305== 
+==22305== Invalid read of size 8
+==22305==    at 0x40461B: tcpRecv (Network.c:54)
+==22305==    by 0x403C51: RTSP_Session_Process (RTSP_Session.c:26)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Address 0x5423828 is 88 bytes inside a block of size 1,536 free'd
+==22305==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==22305==    by 0x405788: client_realease (Server_Client.c:197)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Block was alloc'd at
+==22305==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==22305==    by 0x4053A9: client_init (Server_Client.c:123)
+==22305==    by 0x403AB4: main (main.c:31)
+==22305== 
+==22305== Invalid write of size 8
+==22305==    at 0x4C34AFF: memset (vg_replace_strmem.c:1251)
+==22305==    by 0x404630: tcpRecv (Network.c:54)
+==22305==    by 0x403C51: RTSP_Session_Process (RTSP_Session.c:26)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Address 0x5423e10 is 0 bytes inside a block of size 4,096 free'd
+==22305==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==22305==    by 0x405775: client_realease (Server_Client.c:196)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Block was alloc'd at
+==22305==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==22305==    by 0x4053EB: client_init (Server_Client.c:125)
+==22305==    by 0x403AB4: main (main.c:31)
+==22305== 
+==22305== Invalid write of size 8
+==22305==    at 0x4C34B02: memset (vg_replace_strmem.c:1251)
+==22305==    by 0x404630: tcpRecv (Network.c:54)
+==22305==    by 0x403C51: RTSP_Session_Process (RTSP_Session.c:26)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Address 0x5423e18 is 8 bytes inside a block of size 4,096 free'd
+==22305==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==22305==    by 0x405775: client_realease (Server_Client.c:196)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Block was alloc'd at
+==22305==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==22305==    by 0x4053EB: client_init (Server_Client.c:125)
+==22305==    by 0x403AB4: main (main.c:31)
+==22305== 
+==22305== Invalid write of size 8
+==22305==    at 0x4C34B06: memset (vg_replace_strmem.c:1251)
+==22305==    by 0x404630: tcpRecv (Network.c:54)
+==22305==    by 0x403C51: RTSP_Session_Process (RTSP_Session.c:26)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Address 0x5423e20 is 16 bytes inside a block of size 4,096 free'd
+==22305==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==22305==    by 0x405775: client_realease (Server_Client.c:196)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Block was alloc'd at
+==22305==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==22305==    by 0x4053EB: client_init (Server_Client.c:125)
+==22305==    by 0x403AB4: main (main.c:31)
+==22305== 
+==22305== Invalid write of size 8
+==22305==    at 0x4C34B0A: memset (vg_replace_strmem.c:1251)
+==22305==    by 0x404630: tcpRecv (Network.c:54)
+==22305==    by 0x403C51: RTSP_Session_Process (RTSP_Session.c:26)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Address 0x5423e28 is 24 bytes inside a block of size 4,096 free'd
+==22305==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==22305==    by 0x405775: client_realease (Server_Client.c:196)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Block was alloc'd at
+==22305==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==22305==    by 0x4053EB: client_init (Server_Client.c:125)
+==22305==    by 0x403AB4: main (main.c:31)
+==22305== 
+==22305== Invalid read of size 8
+==22305==    at 0x404635: tcpRecv (Network.c:55)
+==22305==    by 0x403C51: RTSP_Session_Process (RTSP_Session.c:26)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Address 0x5423788 is 232 bytes inside a block of size 240 free'd
+==22305==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==22305==    by 0x405794: client_realease (Server_Client.c:198)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Block was alloc'd at
+==22305==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==22305==    by 0x405385: client_init (Server_Client.c:121)
+==22305==    by 0x403AB4: main (main.c:31)
+==22305== 
+==22305== Invalid read of size 8
+==22305==    at 0x40463C: tcpRecv (Network.c:55)
+==22305==    by 0x403C51: RTSP_Session_Process (RTSP_Session.c:26)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Address 0x5423828 is 88 bytes inside a block of size 1,536 free'd
+==22305==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==22305==    by 0x405788: client_realease (Server_Client.c:197)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Block was alloc'd at
+==22305==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==22305==    by 0x4053A9: client_init (Server_Client.c:123)
+==22305==    by 0x403AB4: main (main.c:31)
+==22305== 
+==22305== Invalid read of size 8
+==22305==    at 0x404644: tcpRecv (Network.c:55)
+==22305==    by 0x403C51: RTSP_Session_Process (RTSP_Session.c:26)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Address 0x5423788 is 232 bytes inside a block of size 240 free'd
+==22305==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==22305==    by 0x405794: client_realease (Server_Client.c:198)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Block was alloc'd at
+==22305==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==22305==    by 0x405385: client_init (Server_Client.c:121)
+==22305==    by 0x403AB4: main (main.c:31)
+==22305== 
+==22305== Invalid read of size 4
+==22305==    at 0x40464B: tcpRecv (Network.c:55)
+==22305==    by 0x403C51: RTSP_Session_Process (RTSP_Session.c:26)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Address 0x54237d4 is 4 bytes inside a block of size 1,536 free'd
+==22305==    at 0x4C2EF50: free (vg_replace_malloc.c:530)
+==22305==    by 0x405788: client_realease (Server_Client.c:197)
+==22305==    by 0x401C80: parse_RTSP_packet (RTSP_Session_tools.c:19)
+==22305==    by 0x403C6F: RTSP_Session_Process (RTSP_Session.c:30)
+==22305==    by 0x4E426B9: start_thread (pthread_create.c:333)
+==22305==  Block was alloc'd at
+==22305==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==22305==    by 0x4053A9: client_init (Server_Client.c:123)
+==22305==    by 0x403AB4: main (main.c:31)
+==22305== 
+==22305== 
+==22305== Process terminating with default action of signal 2 (SIGINT)
+==22305==    at 0x4E4B76D: ??? (syscall-template.S:84)
+==22305==    by 0x403A8A: main (main.c:28)
+==22305== 
+==22305== HEAP SUMMARY:
+==22305==     in use at exit: 356 bytes in 2 blocks
+==22305==   total heap usage: 35 allocs, 33 frees, 3,382,425 bytes allocated
+==22305== 
+==22305== Thread 1:
+==22305== 272 bytes in 1 blocks are possibly lost in loss record 2 of 2
+==22305==    at 0x4C2FF6C: calloc (vg_replace_malloc.c:752)
+==22305==    by 0x40138A4: allocate_dtv (dl-tls.c:322)
+==22305==    by 0x40138A4: _dl_allocate_tls (dl-tls.c:539)
+==22305==    by 0x4E4326E: allocate_stack (allocatestack.c:588)
+==22305==    by 0x4E4326E: pthread_create@@GLIBC_2.2.5 (pthread_create.c:539)
+==22305==    by 0x403ADD: main (main.c:32)
+==22305== 
+==22305== LEAK SUMMARY:
+==22305==    definitely lost: 0 bytes in 0 blocks
+==22305==    indirectly lost: 0 bytes in 0 blocks
+==22305==      possibly lost: 272 bytes in 1 blocks
+==22305==    still reachable: 84 bytes in 1 blocks
+==22305==         suppressed: 0 bytes in 0 blocks
+==22305== Reachable blocks (those to which a pointer was found) are not shown.
+==22305== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==22305== 
+==22305== For counts of detected and suppressed errors, rerun with: -v
+==22305== Use --track-origins=yes to see where uninitialised values come from
+==22305== ERROR SUMMARY: 548 errors from 39 contexts (suppressed: 0 from 0)

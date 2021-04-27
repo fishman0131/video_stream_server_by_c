@@ -1,0 +1,2214 @@
+make -C ffmpeg libavcodec/libavcodec.a
+make[1]: Entering directory '/home/fishman/GP/mplayer+live555/MPlayer-1.3.0/ffmpeg'
+./version.sh: 56: ./version.sh: cannot create libavutil/ffversion.h: Permission denied
+CC	libavcodec/hapdec.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/imgutils.h:30,
+                 from libavcodec/hapdec.c:34:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/hevc.o
+In file included from ./libavutil/atomic.h:29:0,
+                 from libavcodec/hevc.c:26:
+./libavutil/atomic_gcc.h: In function 'atomic_int_get_gcc':
+./libavutil/atomic_gcc.h:31:5: warning: "HAVE_ATOMIC_COMPARE_EXCHANGE" is not defined [-Wundef]
+ #if HAVE_ATOMIC_COMPARE_EXCHANGE
+     ^
+./libavutil/atomic_gcc.h: In function 'atomic_int_set_gcc':
+./libavutil/atomic_gcc.h:42:5: warning: "HAVE_ATOMIC_COMPARE_EXCHANGE" is not defined [-Wundef]
+ #if HAVE_ATOMIC_COMPARE_EXCHANGE
+     ^
+./libavutil/atomic_gcc.h: In function 'atomic_int_add_and_fetch_gcc':
+./libavutil/atomic_gcc.h:53:5: warning: "HAVE_ATOMIC_COMPARE_EXCHANGE" is not defined [-Wundef]
+ #if HAVE_ATOMIC_COMPARE_EXCHANGE
+     ^
+In file included from libavcodec/hevc.c:26:0:
+./libavutil/atomic.h: At top level:
+./libavutil/atomic.h:30:7: warning: "HAVE_ATOMICS_WIN32" is not defined [-Wundef]
+ #elif HAVE_ATOMICS_WIN32
+       ^
+./libavutil/atomic.h:32:7: warning: "HAVE_ATOMICS_SUNCC" is not defined [-Wundef]
+ #elif HAVE_ATOMICS_SUNCC
+       ^
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/hevc.c:28:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/hevc_cabac.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/hevc_cabac.c:25:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+libavcodec/hevc_cabac.c: In function 'ff_hevc_hls_residual_coding':
+libavcodec/hevc_cabac.c:1422:56: warning: 'sb_type' may be used uninitialized in this function [-Wmaybe-uninitialized]
+                                 lc->stat_coeff[sb_type]--;
+                                                        ^
+libavcodec/hevc_cabac.c:1486:43: warning: 'explicit_rdpcm_dir_flag' may be used uninitialized in this function [-Wmaybe-uninitialized]
+                 s->hevcdsp.transform_rdpcm(coeffs, log2_trafo_size, mode);
+                                           ^
+CC	libavcodec/hevc_data.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/hevc.h:29,
+                 from libavcodec/hevc_data.c:23:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/hevc_filter.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/hevc_filter.c:25:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/hevc_mp4toannexb_bsf.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/mem.h:34,
+                 from libavcodec/hevc_mp4toannexb_bsf.c:25:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/hevc_mvs.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/hevc.h:29,
+                 from libavcodec/hevc_mvs.c:24:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/hevc_parse.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/mem.h:34,
+                 from libavcodec/hevc_parse.c:26:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/hevc_parser.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/hevc_parser.c:23:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/hevc_ps.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/imgutils.h:30,
+                 from libavcodec/hevc_ps.c:26:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+libavcodec/hevc_ps.c: In function 'ff_hevc_parse_sps':
+libavcodec/hevc_ps.c:927:79: warning: array subscript is above array bounds [-Warray-bounds]
+             sps->temporal_layer[i].max_dec_pic_buffering = sps->temporal_layer[start].max_dec_pic_buffering;
+                                                                               ^
+libavcodec/hevc_ps.c:928:79: warning: array subscript is above array bounds [-Warray-bounds]
+             sps->temporal_layer[i].num_reorder_pics      = sps->temporal_layer[start].num_reorder_pics;
+                                                                               ^
+libavcodec/hevc_ps.c:929:79: warning: array subscript is above array bounds [-Warray-bounds]
+             sps->temporal_layer[i].max_latency_increase  = sps->temporal_layer[start].max_latency_increase;
+                                                                               ^
+CC	libavcodec/hevc_refs.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/avassert.h:31,
+                 from libavcodec/hevc_refs.c:24:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+libavcodec/hevc_refs.c: In function 'ff_hevc_output_frame':
+libavcodec/hevc_refs.c:205:24: warning: 'min_idx' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             HEVCFrame *frame = &s->DPB[min_idx];
+                        ^
+CC	libavcodec/hevc_sei.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/get_bits.h:31,
+                 from libavcodec/golomb.h:35,
+                 from libavcodec/hevc_sei.c:25:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/hevcdsp.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/get_bits.h:31,
+                 from libavcodec/hevcdsp.h:28,
+                 from libavcodec/hevcdsp.c:25:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/hevcpred.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/hevc.h:29,
+                 from libavcodec/hevcpred.c:23:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/hnm4video.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/imgutils.h:30,
+                 from libavcodec/hnm4video.c:25:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/hpeldsp.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/mathops.h:27,
+                 from libavcodec/bit_depth_template.c:19,
+                 from libavcodec/hpel_template.c:26,
+                 from libavcodec/hpeldsp.c:35:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/hq_hqa.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/hq_hqa.c:26:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/hq_hqadata.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/hq_hqa.h:26,
+                 from libavcodec/hq_hqadata.c:21:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/hq_hqadsp.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/hq_hqadsp.c:24:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/hqx.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/imgutils.h:30,
+                 from libavcodec/hqx.c:23:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/hqxdsp.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/hqxdsp.c:23:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/hqxvlc.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/frame.h:31,
+                 from libavcodec/hqx.h:26,
+                 from libavcodec/hqxvlc.c:21:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/htmlsubtitles.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/htmlsubtitles.c:22:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/huffman.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/qsort.h:24,
+                 from libavcodec/huffman.c:29:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/huffyuv.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/mem.h:34,
+                 from libavcodec/huffyuv.c:33:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/huffyuvdec.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/huffyuvdec.c:35:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/huffyuvdsp.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/mathops.h:27,
+                 from libavcodec/huffyuvdsp.c:23:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/huffyuvencdsp.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/mathops.h:27,
+                 from libavcodec/huffyuvencdsp.c:22:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/idcinvideo.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/idcinvideo.c:51:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/idctdsp.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/idctdsp.c:21:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/iff.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/imgutils.h:30,
+                 from libavcodec/iff.c:30:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/iirfilter.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/iirfilter.h:30,
+                 from libavcodec/iirfilter.c:27:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/imc.o
+In file included from ./libavutil/internal.h:39:0,
+                 from libavcodec/imc.c:40:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/imdct15.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/imdct15.c:33:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/imgconvert.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/imgconvert.c:27:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+libavcodec/imgconvert.c: In function 'av_picture_crop':
+libavcodec/imgconvert.c:126:5: warning: 'data' is deprecated (declared at libavcodec/avcodec.h:3668) [-Wdeprecated-declarations]
+     dst->data[0] = src->data[0] + (top_band * src->linesize[0]) + left_band;
+     ^
+libavcodec/imgconvert.c:126:5: warning: 'data' is deprecated (declared at libavcodec/avcodec.h:3668) [-Wdeprecated-declarations]
+libavcodec/imgconvert.c:126:5: warning: 'linesize' is deprecated (declared at libavcodec/avcodec.h:3670) [-Wdeprecated-declarations]
+libavcodec/imgconvert.c:127:5: warning: 'data' is deprecated (declared at libavcodec/avcodec.h:3668) [-Wdeprecated-declarations]
+     dst->data[1] = src->data[1] + ((top_band >> y_shift) * src->linesize[1]) + (left_band >> x_shift);
+     ^
+libavcodec/imgconvert.c:127:5: warning: 'data' is deprecated (declared at libavcodec/avcodec.h:3668) [-Wdeprecated-declarations]
+libavcodec/imgconvert.c:127:5: warning: 'linesize' is deprecated (declared at libavcodec/avcodec.h:3670) [-Wdeprecated-declarations]
+libavcodec/imgconvert.c:128:5: warning: 'data' is deprecated (declared at libavcodec/avcodec.h:3668) [-Wdeprecated-declarations]
+     dst->data[2] = src->data[2] + ((top_band >> y_shift) * src->linesize[2]) + (left_band >> x_shift);
+     ^
+libavcodec/imgconvert.c:128:5: warning: 'data' is deprecated (declared at libavcodec/avcodec.h:3668) [-Wdeprecated-declarations]
+libavcodec/imgconvert.c:128:5: warning: 'linesize' is deprecated (declared at libavcodec/avcodec.h:3670) [-Wdeprecated-declarations]
+libavcodec/imgconvert.c:132:9: warning: 'data' is deprecated (declared at libavcodec/avcodec.h:3668) [-Wdeprecated-declarations]
+         dst->data[0] = src->data[0] + (top_band * src->linesize[0]) + (left_band * max_step[0]);
+         ^
+libavcodec/imgconvert.c:132:9: warning: 'data' is deprecated (declared at libavcodec/avcodec.h:3668) [-Wdeprecated-declarations]
+libavcodec/imgconvert.c:132:9: warning: 'linesize' is deprecated (declared at libavcodec/avcodec.h:3670) [-Wdeprecated-declarations]
+libavcodec/imgconvert.c:135:5: warning: 'linesize' is deprecated (declared at libavcodec/avcodec.h:3670) [-Wdeprecated-declarations]
+     dst->linesize[0] = src->linesize[0];
+     ^
+libavcodec/imgconvert.c:135:5: warning: 'linesize' is deprecated (declared at libavcodec/avcodec.h:3670) [-Wdeprecated-declarations]
+libavcodec/imgconvert.c:136:5: warning: 'linesize' is deprecated (declared at libavcodec/avcodec.h:3670) [-Wdeprecated-declarations]
+     dst->linesize[1] = src->linesize[1];
+     ^
+libavcodec/imgconvert.c:136:5: warning: 'linesize' is deprecated (declared at libavcodec/avcodec.h:3670) [-Wdeprecated-declarations]
+libavcodec/imgconvert.c:137:5: warning: 'linesize' is deprecated (declared at libavcodec/avcodec.h:3670) [-Wdeprecated-declarations]
+     dst->linesize[2] = src->linesize[2];
+     ^
+libavcodec/imgconvert.c:137:5: warning: 'linesize' is deprecated (declared at libavcodec/avcodec.h:3670) [-Wdeprecated-declarations]
+libavcodec/imgconvert.c: In function 'av_picture_pad':
+libavcodec/imgconvert.c:163:13: warning: 'data' is deprecated (declared at libavcodec/avcodec.h:3668) [-Wdeprecated-declarations]
+             memset(dst->data[0], color[0],
+             ^
+libavcodec/imgconvert.c:164:21: warning: 'linesize' is deprecated (declared at libavcodec/avcodec.h:3670) [-Wdeprecated-declarations]
+                     dst->linesize[0] * padtop + (padleft * max_step[0]));
+                     ^
+libavcodec/imgconvert.c:168:13: warning: 'data' is deprecated (declared at libavcodec/avcodec.h:3668) [-Wdeprecated-declarations]
+             optr = dst->data[0] + dst->linesize[0] * padtop +
+             ^
+libavcodec/imgconvert.c:168:13: warning: 'linesize' is deprecated (declared at libavcodec/avcodec.h:3670) [-Wdeprecated-declarations]
+libavcodec/imgconvert.c:169:21: warning: 'linesize' is deprecated (declared at libavcodec/avcodec.h:3670) [-Wdeprecated-declarations]
+                     (dst->linesize[0] - (padright * max_step[0]));
+                     ^
+libavcodec/imgconvert.c:173:17: warning: 'linesize' is deprecated (declared at libavcodec/avcodec.h:3670) [-Wdeprecated-declarations]
+                 optr += dst->linesize[0];
+                 ^
+libavcodec/imgconvert.c:178:13: warning: 'data' is deprecated (declared at libavcodec/avcodec.h:3668) [-Wdeprecated-declarations]
+             optr = dst->data[0] + dst->linesize[0] * (height - padbottom) -
+             ^
+libavcodec/imgconvert.c:178:13: warning: 'linesize' is deprecated (declared at libavcodec/avcodec.h:3670) [-Wdeprecated-declarations]
+libavcodec/imgconvert.c:180:13: warning: 'linesize' is deprecated (declared at libavcodec/avcodec.h:3670) [-Wdeprecated-declarations]
+             memset(optr, color[0], dst->linesize[0] * padbottom +
+             ^
+libavcodec/imgconvert.c:192:13: warning: 'data' is deprecated (declared at libavcodec/avcodec.h:3668) [-Wdeprecated-declarations]
+             memset(dst->data[i], color[i],
+             ^
+libavcodec/imgconvert.c:193:17: warning: 'linesize' is deprecated (declared at libavcodec/avcodec.h:3670) [-Wdeprecated-declarations]
+                 dst->linesize[i] * (padtop >> y_shift) + (padleft >> x_shift));
+                 ^
+libavcodec/imgconvert.c:197:13: warning: 'data' is deprecated (declared at libavcodec/avcodec.h:3668) [-Wdeprecated-declarations]
+             optr = dst->data[i] + dst->linesize[i] * (padtop >> y_shift) +
+             ^
+libavcodec/imgconvert.c:197:13: warning: 'linesize' is deprecated (declared at libavcodec/avcodec.h:3670) [-Wdeprecated-declarations]
+libavcodec/imgconvert.c:198:17: warning: 'linesize' is deprecated (declared at libavcodec/avcodec.h:3670) [-Wdeprecated-declarations]
+                 (dst->linesize[i] - (padright >> x_shift));
+                 ^
+libavcodec/imgconvert.c:202:17: warning: 'linesize' is deprecated (declared at libavcodec/avcodec.h:3670) [-Wdeprecated-declarations]
+                 optr += dst->linesize[i];
+                 ^
+libavcodec/imgconvert.c:207:13: warning: 'data' is deprecated (declared at libavcodec/avcodec.h:3668) [-Wdeprecated-declarations]
+             uint8_t *iptr = src->data[i];
+             ^
+libavcodec/imgconvert.c:208:13: warning: 'data' is deprecated (declared at libavcodec/avcodec.h:3668) [-Wdeprecated-declarations]
+             optr = dst->data[i] + dst->linesize[i] * (padtop >> y_shift) +
+             ^
+libavcodec/imgconvert.c:208:13: warning: 'linesize' is deprecated (declared at libavcodec/avcodec.h:3670) [-Wdeprecated-declarations]
+libavcodec/imgconvert.c:211:13: warning: 'linesize' is deprecated (declared at libavcodec/avcodec.h:3670) [-Wdeprecated-declarations]
+             iptr += src->linesize[i];
+             ^
+libavcodec/imgconvert.c:212:13: warning: 'data' is deprecated (declared at libavcodec/avcodec.h:3668) [-Wdeprecated-declarations]
+             optr = dst->data[i] + dst->linesize[i] * (padtop >> y_shift) +
+             ^
+libavcodec/imgconvert.c:212:13: warning: 'linesize' is deprecated (declared at libavcodec/avcodec.h:3670) [-Wdeprecated-declarations]
+libavcodec/imgconvert.c:213:17: warning: 'linesize' is deprecated (declared at libavcodec/avcodec.h:3670) [-Wdeprecated-declarations]
+                 (dst->linesize[i] - (padright >> x_shift));
+                 ^
+libavcodec/imgconvert.c:219:17: warning: 'linesize' is deprecated (declared at libavcodec/avcodec.h:3670) [-Wdeprecated-declarations]
+                 iptr += src->linesize[i];
+                 ^
+libavcodec/imgconvert.c:220:17: warning: 'linesize' is deprecated (declared at libavcodec/avcodec.h:3670) [-Wdeprecated-declarations]
+                 optr += dst->linesize[i];
+                 ^
+libavcodec/imgconvert.c:225:13: warning: 'data' is deprecated (declared at libavcodec/avcodec.h:3668) [-Wdeprecated-declarations]
+             optr = dst->data[i] + dst->linesize[i] *
+             ^
+libavcodec/imgconvert.c:225:13: warning: 'linesize' is deprecated (declared at libavcodec/avcodec.h:3670) [-Wdeprecated-declarations]
+libavcodec/imgconvert.c:227:13: warning: 'linesize' is deprecated (declared at libavcodec/avcodec.h:3670) [-Wdeprecated-declarations]
+             memset(optr, color[i],dst->linesize[i] *
+             ^
+CC	libavcodec/imx_dump_header_bsf.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/imx_dump_header_bsf.c:28:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/indeo2.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/indeo2.c:29:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/indeo3.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/imgutils.h:30,
+                 from libavcodec/indeo3.c:32:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/indeo4.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/indeo4.c:31:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/indeo5.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/indeo5.c:31:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/intelh263dec.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/frame.h:31,
+                 from libavcodec/mpegutils.h:26,
+                 from libavcodec/intelh263dec.c:21:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/interplayacm.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/interplayacm.c:22:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/interplayvideo.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/interplayvideo.c:42:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+libavcodec/interplayvideo.c: In function 'ipvideo_decode_block_opcode_0xD_16':
+libavcodec/interplayvideo.c:856:26: warning: 'P[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             pixel_ptr[x] = P[x >> 2];
+                          ^
+libavcodec/interplayvideo.c:856:26: warning: 'P[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+libavcodec/interplayvideo.c: In function 'ipvideo_decode_block_opcode_0xD':
+libavcodec/interplayvideo.c:489:19: warning: 'P[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     unsigned char P[2];
+                   ^
+libavcodec/interplayvideo.c:489:19: warning: 'P[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+CC	libavcodec/intrax8.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/avassert.h:31,
+                 from libavcodec/intrax8.c:24:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/intrax8dsp.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/intrax8dsp.c:25:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/ituh263dec.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/imgutils.h:30,
+                 from libavcodec/ituh263dec.c:34:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/ituh263enc.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/ituh263enc.c:33:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/ivi.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/imgutils.h:30,
+                 from libavcodec/ivi.c:33:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/ivi_dsp.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/ivi_dsp.c:29:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/jacosubdec.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/ass.h:25,
+                 from libavcodec/jacosubdec.c:28:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/jfdctfst.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/jfdctfst.c:71:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/jfdctint.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/jfdctint_template.c:62,
+                 from libavcodec/jfdctint.c:20:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/jpeg2000.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/avassert.h:31,
+                 from libavcodec/jpeg2000.c:29:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/jpeg2000dec.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/avassert.h:31,
+                 from libavcodec/jpeg2000dec.c:31:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/jpeg2000dsp.o
+CC	libavcodec/jpeg2000dwt.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/avassert.h:31,
+                 from libavcodec/jpeg2000dwt.c:28:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/jpegls.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/internal.h:33,
+                 from libavcodec/jpegls.c:28:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/jpeglsdec.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/jpeglsdec.c:28:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/jpegtables.o
+In file included from ./libavutil/internal.h:39:0,
+                 from libavcodec/jpegtables.h:26,
+                 from libavcodec/jpegtables.c:33:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/jrevdct.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/jrevdct.c:65:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/jvdec.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/jvdec.c:30:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/kbdwin.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/avassert.h:31,
+                 from libavcodec/kbdwin.c:19:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/kgv1dec.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/kgv1dec.c:27:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/kmvc.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/kmvc.c:30:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/lagarith.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/lagarith.c:30:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/lagarithrac.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/get_bits.h:31,
+                 from libavcodec/lagarithrac.c:30:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/latm_parser.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/parser.h:26,
+                 from libavcodec/latm_parser.c:27:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/lcldec.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/mem.h:34,
+                 from libavcodec/lcldec.c:44:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/loco.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/loco.c:27:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/lossless_audiodsp.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/lossless_audiodsp.c:23:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/lossless_videodsp.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/lossless_videodsp.c:20:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/lpc.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/lpc.c:22:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/lsp.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/lsp.c:26:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/lzf.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/mem.h:34,
+                 from libavcodec/lzf.c:32:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/lzw.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/lzw.c:30:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mace.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/mace.c:27:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mathtables.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/mathops.h:27,
+                 from libavcodec/mathtables.c:23:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mdct_fixed.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/mdct_template.c:24,
+                 from libavcodec/mdct_fixed.c:21:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mdct_fixed_32.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/mdct_template.c:24,
+                 from libavcodec/mdct_fixed_32.c:52:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mdct_float.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/mdct_template.c:24,
+                 from libavcodec/mdct_float.c:21:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mdec.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/mdec.c:30:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/me_cmp.o
+In file included from ./libavutil/internal.h:39:0,
+                 from libavcodec/me_cmp.c:24:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/metasound.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/metasound.c:31:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/metasound_data.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/twinvq.h:28,
+                 from libavcodec/metasound_data.h:28,
+                 from libavcodec/metasound_data.c:22:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/microdvddec.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/microdvddec.c:32:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mimic.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/mimic.c:26:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mjpeg2jpeg_bsf.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/mem.h:34,
+                 from libavcodec/mjpeg2jpeg_bsf.c:30:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mjpeg_parser.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/parser.h:26,
+                 from libavcodec/mjpeg_parser.c:29:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mjpega_dump_header_bsf.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/mjpega_dump_header_bsf.c:28:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mjpegbdec.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/mjpegbdec.c:29:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mjpegdec.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/imgutils.h:30,
+                 from libavcodec/mjpegdec.c:33:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mlp.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/mlp.h:27,
+                 from libavcodec/mlp.c:26:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mlp_parser.o
+In file included from ./libavutil/internal.h:39:0,
+                 from libavcodec/mlp_parser.c:31:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mlpdec.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/mlpdec.c:29:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mlpdsp.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/mlp.h:27,
+                 from libavcodec/mlpdsp.h:26,
+                 from libavcodec/mlpdsp.c:24:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mmvideo.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/mmvideo.c:35:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/motion_est.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/motion_est.c:34:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+In file included from libavcodec/motion_est.c:295:0:
+libavcodec/motion_est.c: In function 'interlaced_search.constprop.7':
+libavcodec/motion_est_template.c:1086:49: warning: 'P[4][1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         CHECK_MV(P_MEDIAN[0]>>shift, P_MEDIAN[1]>>shift)
+                                                 ^
+libavcodec/motion_est.c:765:9: note: 'P[4][1]' was declared here
+     int P[10][2];
+         ^
+In file included from libavcodec/motion_est.c:295:0:
+libavcodec/motion_est_template.c:1086:29: warning: 'P[4][0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         CHECK_MV(P_MEDIAN[0]>>shift, P_MEDIAN[1]>>shift)
+                             ^
+libavcodec/motion_est.c:765:9: note: 'P[4][0]' was declared here
+     int P[10][2];
+         ^
+In file included from libavcodec/motion_est.c:295:0:
+libavcodec/motion_est_template.c:1089:53: warning: 'P[3][1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         CHECK_MV(P_TOPRIGHT[0]>>shift, P_TOPRIGHT[1]>>shift)
+                                                     ^
+libavcodec/motion_est.c:765:9: note: 'P[3][1]' was declared here
+     int P[10][2];
+         ^
+In file included from libavcodec/motion_est.c:295:0:
+libavcodec/motion_est_template.c:1089:31: warning: 'P[3][0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         CHECK_MV(P_TOPRIGHT[0]>>shift, P_TOPRIGHT[1]>>shift)
+                               ^
+libavcodec/motion_est.c:765:9: note: 'P[3][0]' was declared here
+     int P[10][2];
+         ^
+In file included from libavcodec/motion_est.c:295:0:
+libavcodec/motion_est_template.c:1088:43: warning: 'P[2][1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         CHECK_MV(P_TOP[0]>>shift, P_TOP[1]>>shift)
+                                           ^
+libavcodec/motion_est.c:765:9: note: 'P[2][1]' was declared here
+     int P[10][2];
+         ^
+In file included from libavcodec/motion_est.c:295:0:
+libavcodec/motion_est_template.c:1088:26: warning: 'P[2][0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         CHECK_MV(P_TOP[0]>>shift, P_TOP[1]>>shift)
+                          ^
+libavcodec/motion_est.c:765:9: note: 'P[2][0]' was declared here
+     int P[10][2];
+         ^
+CC	libavcodec/motionpixels.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/motionpixels.c:22:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/movsub_bsf.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/movsub_bsf.c:21:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/movtextdec.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/movtextdec.c:22:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mp3_header_decompress_bsf.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/mp3_header_decompress_bsf.c:21:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mpc.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/mpc.c:30:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mpc7.o
+In file included from ./libavutil/internal.h:39:0,
+                 from libavcodec/mpc7.c:29:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mpc8.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/mpc8.c:30:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mpeg12.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/avassert.h:31,
+                 from libavcodec/mpeg12.c:31:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mpeg12data.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/get_bits.h:31,
+                 from libavcodec/rl.h:31,
+                 from libavcodec/mpeg12data.h:33,
+                 from libavcodec/mpeg12data.c:28:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mpeg12dec.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/imgutils.h:30,
+                 from libavcodec/mpeg12dec.c:32:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+libavcodec/mpeg12dec.c: In function 'setup_hwaccel_for_pixfmt':
+libavcodec/mpeg12dec.c:1277:9: warning: 'xvmc_acceleration' is deprecated (declared at libavcodec/avcodec.h:2078) [-Wdeprecated-declarations]
+         avctx->xvmc_acceleration = 2;
+         ^
+libavcodec/mpeg12dec.c: In function 'mpeg_decode_user_data':
+libavcodec/mpeg12dec.c:2377:13: warning: 'dtg_active_format' is deprecated (declared at libavcodec/avcodec.h:2029) [-Wdeprecated-declarations]
+             avctx->dtg_active_format = p[0] & 0x0f;
+             ^
+libavcodec/mpeg12dec.c: In function 'mpeg_decode_gop':
+libavcodec/mpeg12dec.c:2430:5: warning: 'timecode_frame_start' is deprecated (declared at libavcodec/avcodec.h:2635) [-Wdeprecated-declarations]
+     avctx->timecode_frame_start = tc;
+     ^
+CC	libavcodec/mpeg12enc.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/avassert.h:31,
+                 from libavcodec/mpeg12enc.c:31:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+libavcodec/mpeg12enc.c: In function 'encode_init':
+libavcodec/mpeg12enc.c:211:5: warning: 'timecode_frame_start' is deprecated (declared at libavcodec/avcodec.h:2635) [-Wdeprecated-declarations]
+     if (avctx->timecode_frame_start)
+     ^
+libavcodec/mpeg12enc.c:212:9: warning: 'timecode_frame_start' is deprecated (declared at libavcodec/avcodec.h:2635) [-Wdeprecated-declarations]
+         s->timecode_frame_start = avctx->timecode_frame_start;
+         ^
+CC	libavcodec/mpeg4_unpack_bframes_bsf.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/mpeg4_unpack_bframes_bsf.c:22:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mpeg4audio.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/get_bits.h:31,
+                 from libavcodec/mpeg4audio.c:23:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mpeg4video.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/frame.h:31,
+                 from libavcodec/mpegutils.h:26,
+                 from libavcodec/mpeg4video.c:23:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mpeg4video_parser.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/internal.h:33,
+                 from libavcodec/mpeg4video_parser.c:25:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mpeg4videodec.o
+In file included from ./libavutil/internal.h:39:0,
+                 from libavcodec/mpeg4videodec.c:25:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mpeg_er.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/error_resilience.h:25,
+                 from libavcodec/mpeg_er.c:19:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mpegaudio_parser.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/parser.h:26,
+                 from libavcodec/mpegaudio_parser.c:23:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mpegaudiodata.o
+In file included from ./libavutil/internal.h:39:0,
+                 from libavcodec/mpegaudiodata.h:32,
+                 from libavcodec/mpegaudiodata.c:27:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mpegaudiodec_fixed.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/mpegaudiodec_fixed.c:22:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mpegaudiodec_float.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/mpegaudiodec_float.c:23:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mpegaudiodecheader.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/mpegaudiodecheader.c:27:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mpegaudiodsp.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/mpegaudiodsp.h:23,
+                 from libavcodec/mpegaudiodsp.c:23:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mpegaudiodsp_data.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/mpegaudiodsp.h:23,
+                 from libavcodec/mpegaudiodsp_data.c:19:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mpegaudiodsp_fixed.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/mem.h:34,
+                 from libavcodec/mpegaudiodsp_template.c:24,
+                 from libavcodec/mpegaudiodsp_fixed.c:20:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mpegaudiodsp_float.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/mem.h:34,
+                 from libavcodec/mpegaudiodsp_template.c:24,
+                 from libavcodec/mpegaudiodsp_float.c:20:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mpegpicture.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/avassert.h:31,
+                 from libavcodec/mpegpicture.c:23:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mpegutils.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/mpegutils.c:23:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mpegvideo.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/avassert.h:31,
+                 from libavcodec/mpegvideo.c:31:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mpegvideo_enc.o
+In file included from ./libavutil/internal.h:39:0,
+                 from libavcodec/mpegvideo_enc.c:36:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+libavcodec/mpegvideo_enc.c: In function 'ff_mpv_encode_init':
+libavcodec/mpegvideo_enc.c:354:5: warning: 'rtp_payload_size' is deprecated (declared at libavcodec/avcodec.h:2655) [-Wdeprecated-declarations]
+     if (avctx->rtp_payload_size)
+     ^
+libavcodec/mpegvideo_enc.c:355:9: warning: 'rtp_payload_size' is deprecated (declared at libavcodec/avcodec.h:2655) [-Wdeprecated-declarations]
+         s->rtp_payload_size = avctx->rtp_payload_size;
+         ^
+libavcodec/mpegvideo_enc.c:356:5: warning: 'me_penalty_compensation' is deprecated (declared at libavcodec/avcodec.h:2177) [-Wdeprecated-declarations]
+     if (avctx->me_penalty_compensation)
+     ^
+libavcodec/mpegvideo_enc.c:357:9: warning: 'me_penalty_compensation' is deprecated (declared at libavcodec/avcodec.h:2177) [-Wdeprecated-declarations]
+         s->me_penalty_compensation = avctx->me_penalty_compensation;
+         ^
+libavcodec/mpegvideo_enc.c:358:5: warning: 'pre_me' is deprecated (declared at libavcodec/avcodec.h:1995) [-Wdeprecated-declarations]
+     if (avctx->pre_me)
+     ^
+libavcodec/mpegvideo_enc.c:359:9: warning: 'pre_me' is deprecated (declared at libavcodec/avcodec.h:1995) [-Wdeprecated-declarations]
+         s->me_pre = avctx->pre_me;
+         ^
+libavcodec/mpegvideo_enc.c:415:5: warning: 'me_method' is deprecated (declared at libavcodec/avcodec.h:1759) [-Wdeprecated-declarations]
+     s->me_method = avctx->me_method;
+     ^
+libavcodec/mpegvideo_enc.c:424:5: warning: 'border_masking' is deprecated (declared at libavcodec/avcodec.h:2155) [-Wdeprecated-declarations]
+     if (avctx->border_masking != 0.0)
+     ^
+libavcodec/mpegvideo_enc.c:425:9: warning: 'border_masking' is deprecated (declared at libavcodec/avcodec.h:2155) [-Wdeprecated-declarations]
+         s->border_masking = avctx->border_masking;
+         ^
+libavcodec/mpegvideo_enc.c:620:5: warning: 'mpeg_quant' is deprecated (declared at libavcodec/avcodec.h:1851) [-Wdeprecated-declarations]
+     if (avctx->mpeg_quant)
+     ^
+libavcodec/mpegvideo_enc.c:621:9: warning: 'mpeg_quant' is deprecated (declared at libavcodec/avcodec.h:1851) [-Wdeprecated-declarations]
+         s->mpeg_quant = avctx->mpeg_quant;
+         ^
+libavcodec/mpegvideo_enc.c:646:5: warning: 'scenechange_threshold' is deprecated (declared at libavcodec/avcodec.h:2108) [-Wdeprecated-declarations]
+     if (avctx->scenechange_threshold)
+     ^
+libavcodec/mpegvideo_enc.c:647:9: warning: 'scenechange_threshold' is deprecated (declared at libavcodec/avcodec.h:2108) [-Wdeprecated-declarations]
+         s->scenechange_threshold = avctx->scenechange_threshold;
+         ^
+libavcodec/mpegvideo_enc.c:711:5: warning: 'b_frame_strategy' is deprecated (declared at libavcodec/avcodec.h:1830) [-Wdeprecated-declarations]
+     if (avctx->b_frame_strategy)
+     ^
+libavcodec/mpegvideo_enc.c:712:9: warning: 'b_frame_strategy' is deprecated (declared at libavcodec/avcodec.h:1830) [-Wdeprecated-declarations]
+         s->b_frame_strategy = avctx->b_frame_strategy;
+         ^
+libavcodec/mpegvideo_enc.c:713:5: warning: 'b_sensitivity' is deprecated (declared at libavcodec/avcodec.h:2233) [-Wdeprecated-declarations]
+     if (avctx->b_sensitivity != 40)
+     ^
+libavcodec/mpegvideo_enc.c:714:9: warning: 'b_sensitivity' is deprecated (declared at libavcodec/avcodec.h:2233) [-Wdeprecated-declarations]
+         s->b_sensitivity = avctx->b_sensitivity;
+         ^
+libavcodec/mpegvideo_enc.c:749:5: warning: 'intra_quant_bias' is deprecated (declared at libavcodec/avcodec.h:2052) [-Wdeprecated-declarations]
+     if (avctx->intra_quant_bias != FF_DEFAULT_QUANT_BIAS)
+     ^
+libavcodec/mpegvideo_enc.c:750:9: warning: 'intra_quant_bias' is deprecated (declared at libavcodec/avcodec.h:2052) [-Wdeprecated-declarations]
+         s->intra_quant_bias = avctx->intra_quant_bias;
+         ^
+libavcodec/mpegvideo_enc.c:751:5: warning: 'inter_quant_bias' is deprecated (declared at libavcodec/avcodec.h:2058) [-Wdeprecated-declarations]
+     if (avctx->inter_quant_bias != FF_DEFAULT_QUANT_BIAS)
+     ^
+libavcodec/mpegvideo_enc.c:752:9: warning: 'inter_quant_bias' is deprecated (declared at libavcodec/avcodec.h:2058) [-Wdeprecated-declarations]
+         s->inter_quant_bias = avctx->inter_quant_bias;
+         ^
+libavcodec/mpegvideo_enc.c:907:5: warning: 'noise_reduction' is deprecated (declared at libavcodec/avcodec.h:2112) [-Wdeprecated-declarations]
+     if (avctx->noise_reduction)
+     ^
+libavcodec/mpegvideo_enc.c:908:9: warning: 'noise_reduction' is deprecated (declared at libavcodec/avcodec.h:2112) [-Wdeprecated-declarations]
+         s->noise_reduction = avctx->noise_reduction;
+         ^
+libavcodec/mpegvideo_enc.c:972:5: warning: 'frame_skip_threshold' is deprecated (declared at libavcodec/avcodec.h:2602) [-Wdeprecated-declarations]
+     if (avctx->frame_skip_threshold)
+     ^
+libavcodec/mpegvideo_enc.c:973:9: warning: 'frame_skip_threshold' is deprecated (declared at libavcodec/avcodec.h:2602) [-Wdeprecated-declarations]
+         s->frame_skip_threshold = avctx->frame_skip_threshold;
+         ^
+libavcodec/mpegvideo_enc.c:974:5: warning: 'frame_skip_factor' is deprecated (declared at libavcodec/avcodec.h:2606) [-Wdeprecated-declarations]
+     if (avctx->frame_skip_factor)
+     ^
+libavcodec/mpegvideo_enc.c:975:9: warning: 'frame_skip_factor' is deprecated (declared at libavcodec/avcodec.h:2606) [-Wdeprecated-declarations]
+         s->frame_skip_factor = avctx->frame_skip_factor;
+         ^
+libavcodec/mpegvideo_enc.c:976:5: warning: 'frame_skip_exp' is deprecated (declared at libavcodec/avcodec.h:2610) [-Wdeprecated-declarations]
+     if (avctx->frame_skip_exp)
+     ^
+libavcodec/mpegvideo_enc.c:977:9: warning: 'frame_skip_exp' is deprecated (declared at libavcodec/avcodec.h:2610) [-Wdeprecated-declarations]
+         s->frame_skip_exp = avctx->frame_skip_exp;
+         ^
+libavcodec/mpegvideo_enc.c:978:5: warning: 'frame_skip_cmp' is deprecated (declared at libavcodec/avcodec.h:2614) [-Wdeprecated-declarations]
+     if (avctx->frame_skip_cmp != FF_CMP_DCTMAX)
+     ^
+libavcodec/mpegvideo_enc.c:979:9: warning: 'frame_skip_cmp' is deprecated (declared at libavcodec/avcodec.h:2614) [-Wdeprecated-declarations]
+         s->frame_skip_cmp = avctx->frame_skip_cmp;
+         ^
+libavcodec/mpegvideo_enc.c:1035:5: warning: 'error_rate' is deprecated (declared at libavcodec/avcodec.h:3158) [-Wdeprecated-declarations]
+     if (avctx->error_rate)
+     ^
+libavcodec/mpegvideo_enc.c:1036:9: warning: 'error_rate' is deprecated (declared at libavcodec/avcodec.h:3158) [-Wdeprecated-declarations]
+         s->error_rate = avctx->error_rate;
+         ^
+libavcodec/mpegvideo_enc.c:1056:5: warning: 'rc_qsquish' is deprecated (declared at libavcodec/avcodec.h:2487) [-Wdeprecated-declarations]
+     if (avctx->rc_qsquish != 0.0)
+     ^
+libavcodec/mpegvideo_enc.c:1057:9: warning: 'rc_qsquish' is deprecated (declared at libavcodec/avcodec.h:2487) [-Wdeprecated-declarations]
+         s->rc_qsquish = avctx->rc_qsquish;
+         ^
+libavcodec/mpegvideo_enc.c:1058:5: warning: 'rc_qmod_amp' is deprecated (declared at libavcodec/avcodec.h:2490) [-Wdeprecated-declarations]
+     if (avctx->rc_qmod_amp != 0.0)
+     ^
+libavcodec/mpegvideo_enc.c:1059:9: warning: 'rc_qmod_amp' is deprecated (declared at libavcodec/avcodec.h:2490) [-Wdeprecated-declarations]
+         s->rc_qmod_amp = avctx->rc_qmod_amp;
+         ^
+libavcodec/mpegvideo_enc.c:1060:5: warning: 'rc_qmod_freq' is deprecated (declared at libavcodec/avcodec.h:2492) [-Wdeprecated-declarations]
+     if (avctx->rc_qmod_freq)
+     ^
+libavcodec/mpegvideo_enc.c:1061:9: warning: 'rc_qmod_freq' is deprecated (declared at libavcodec/avcodec.h:2492) [-Wdeprecated-declarations]
+         s->rc_qmod_freq = avctx->rc_qmod_freq;
+         ^
+libavcodec/mpegvideo_enc.c:1062:5: warning: 'rc_buffer_aggressivity' is deprecated (declared at libavcodec/avcodec.h:2537) [-Wdeprecated-declarations]
+     if (avctx->rc_buffer_aggressivity != 1.0)
+     ^
+libavcodec/mpegvideo_enc.c:1063:9: warning: 'rc_buffer_aggressivity' is deprecated (declared at libavcodec/avcodec.h:2537) [-Wdeprecated-declarations]
+         s->rc_buffer_aggressivity = avctx->rc_buffer_aggressivity;
+         ^
+libavcodec/mpegvideo_enc.c:1064:5: warning: 'rc_initial_cplx' is deprecated (declared at libavcodec/avcodec.h:2540) [-Wdeprecated-declarations]
+     if (avctx->rc_initial_cplx != 0.0)
+     ^
+libavcodec/mpegvideo_enc.c:1065:9: warning: 'rc_initial_cplx' is deprecated (declared at libavcodec/avcodec.h:2540) [-Wdeprecated-declarations]
+         s->rc_initial_cplx = avctx->rc_initial_cplx;
+         ^
+libavcodec/mpegvideo_enc.c:1066:5: warning: 'lmin' is deprecated (declared at libavcodec/avcodec.h:2590) [-Wdeprecated-declarations]
+     if (avctx->lmin)
+     ^
+libavcodec/mpegvideo_enc.c:1067:9: warning: 'lmin' is deprecated (declared at libavcodec/avcodec.h:2590) [-Wdeprecated-declarations]
+         s->lmin = avctx->lmin;
+         ^
+libavcodec/mpegvideo_enc.c:1068:5: warning: 'lmax' is deprecated (declared at libavcodec/avcodec.h:2596) [-Wdeprecated-declarations]
+     if (avctx->lmax)
+     ^
+libavcodec/mpegvideo_enc.c:1069:9: warning: 'lmax' is deprecated (declared at libavcodec/avcodec.h:2596) [-Wdeprecated-declarations]
+         s->lmax = avctx->lmax;
+         ^
+libavcodec/mpegvideo_enc.c:1071:5: warning: 'rc_eq' is deprecated (declared at libavcodec/avcodec.h:2515) [-Wdeprecated-declarations]
+     if (avctx->rc_eq) {
+     ^
+libavcodec/mpegvideo_enc.c:1073:9: warning: 'rc_eq' is deprecated (declared at libavcodec/avcodec.h:2515) [-Wdeprecated-declarations]
+         s->rc_eq = av_strdup(avctx->rc_eq);
+         ^
+libavcodec/mpegvideo_enc.c:1082:5: warning: 'brd_scale' is deprecated (declared at libavcodec/avcodec.h:2190) [-Wdeprecated-declarations]
+     if (avctx->brd_scale)
+     ^
+libavcodec/mpegvideo_enc.c:1083:9: warning: 'brd_scale' is deprecated (declared at libavcodec/avcodec.h:2190) [-Wdeprecated-declarations]
+         s->brd_scale = avctx->brd_scale;
+         ^
+libavcodec/mpegvideo_enc.c:1085:5: warning: 'prediction_method' is deprecated (declared at libavcodec/avcodec.h:1915) [-Wdeprecated-declarations]
+     if (avctx->prediction_method)
+     ^
+libavcodec/mpegvideo_enc.c:1086:9: warning: 'prediction_method' is deprecated (declared at libavcodec/avcodec.h:1915) [-Wdeprecated-declarations]
+         s->pred = avctx->prediction_method + 1;
+         ^
+libavcodec/mpegvideo_enc.c: In function 'frame_end':
+libavcodec/mpegvideo_enc.c:1739:5: warning: 'coded_frame' is deprecated (declared at libavcodec/avcodec.h:2945) [-Wdeprecated-declarations]
+     av_frame_copy_props(s->avctx->coded_frame, s->current_picture.f);
+     ^
+libavcodec/mpegvideo_enc.c:1744:5: warning: 'error' is deprecated (declared at ./libavutil/frame.h:300) [-Wdeprecated-declarations]
+     memcpy(s->current_picture.f->error, s->current_picture.encoding_error,
+     ^
+libavcodec/mpegvideo_enc.c: In function 'ff_mpv_encode_picture':
+libavcodec/mpegvideo_enc.c:1903:9: warning: 'header_bits' is deprecated (declared at libavcodec/avcodec.h:2668) [-Wdeprecated-declarations]
+         avctx->header_bits = s->header_bits;
+         ^
+libavcodec/mpegvideo_enc.c:1904:9: warning: 'mv_bits' is deprecated (declared at libavcodec/avcodec.h:2666) [-Wdeprecated-declarations]
+         avctx->mv_bits     = s->mv_bits;
+         ^
+libavcodec/mpegvideo_enc.c:1905:9: warning: 'misc_bits' is deprecated (declared at libavcodec/avcodec.h:2680) [-Wdeprecated-declarations]
+         avctx->misc_bits   = s->misc_bits;
+         ^
+libavcodec/mpegvideo_enc.c:1906:9: warning: 'i_tex_bits' is deprecated (declared at libavcodec/avcodec.h:2670) [-Wdeprecated-declarations]
+         avctx->i_tex_bits  = s->i_tex_bits;
+         ^
+libavcodec/mpegvideo_enc.c:1907:9: warning: 'p_tex_bits' is deprecated (declared at libavcodec/avcodec.h:2672) [-Wdeprecated-declarations]
+         avctx->p_tex_bits  = s->p_tex_bits;
+         ^
+libavcodec/mpegvideo_enc.c:1908:9: warning: 'i_count' is deprecated (declared at libavcodec/avcodec.h:2674) [-Wdeprecated-declarations]
+         avctx->i_count     = s->i_count;
+         ^
+libavcodec/mpegvideo_enc.c:1910:9: warning: 'p_count' is deprecated (declared at libavcodec/avcodec.h:2676) [-Wdeprecated-declarations]
+         avctx->p_count     = s->mb_num - s->i_count - s->skip_count;
+         ^
+libavcodec/mpegvideo_enc.c:1911:9: warning: 'skip_count' is deprecated (declared at libavcodec/avcodec.h:2678) [-Wdeprecated-declarations]
+         avctx->skip_count  = s->skip_count;
+         ^
+libavcodec/mpegvideo_enc.c:2062:13: warning: 'vbv_delay' is deprecated (declared at libavcodec/avcodec.h:3171) [-Wdeprecated-declarations]
+             avctx->vbv_delay     = vbv_delay * 300;
+             ^
+libavcodec/mpegvideo_enc.c:2069:9: warning: 'frame_bits' is deprecated (declared at libavcodec/avcodec.h:2684) [-Wdeprecated-declarations]
+         avctx->frame_bits  = s->frame_bits;
+         ^
+libavcodec/mpegvideo_enc.c: In function 'encode_thread':
+libavcodec/mpegvideo_enc.c:3087:21: warning: 'rtp_callback' is deprecated (declared at libavcodec/avcodec.h:2649) [-Wdeprecated-declarations]
+                     if (s->avctx->rtp_callback){
+                     ^
+libavcodec/mpegvideo_enc.c:3089:25: warning: 'rtp_callback' is deprecated (declared at libavcodec/avcodec.h:2649) [-Wdeprecated-declarations]
+                         s->avctx->rtp_callback(s->avctx, s->ptr_lastgob, current_packet_size, number_mb);
+                         ^
+libavcodec/mpegvideo_enc.c:3571:5: warning: 'rtp_callback' is deprecated (declared at libavcodec/avcodec.h:2649) [-Wdeprecated-declarations]
+     if (s->avctx->rtp_callback) {
+     ^
+libavcodec/mpegvideo_enc.c:3576:9: warning: 'rtp_callback' is deprecated (declared at libavcodec/avcodec.h:2649) [-Wdeprecated-declarations]
+         s->avctx->rtp_callback(s->avctx, s->ptr_lastgob, pdif, number_mb);
+         ^
+In file included from libavcodec/get_bits.h:32:0,
+                 from libavcodec/mpeg12vlc.h:31,
+                 from libavcodec/mpeg12.h:25,
+                 from libavcodec/mpegvideo_enc.c:45:
+./libavutil/intreadwrite.h:396:47: warning: 'pred_x' may be used uninitialized in this function [-Wmaybe-uninitialized]
+ #define AV_WB8(p, d)  do { ((uint8_t*)(p))[0] = (d); } while(0)
+                                               ^
+libavcodec/mpegvideo_enc.c:2862:9: note: 'pred_x' was declared here
+     int pred_x, pred_y;
+         ^
+In file included from libavcodec/get_bits.h:32:0,
+                 from libavcodec/mpeg12vlc.h:31,
+                 from libavcodec/mpeg12.h:25,
+                 from libavcodec/mpegvideo_enc.c:45:
+./libavutil/intreadwrite.h:396:47: warning: 'pred_y' may be used uninitialized in this function [-Wmaybe-uninitialized]
+ #define AV_WB8(p, d)  do { ((uint8_t*)(p))[0] = (d); } while(0)
+                                               ^
+libavcodec/mpegvideo_enc.c:2862:17: note: 'pred_y' was declared here
+     int pred_x, pred_y;
+                 ^
+CC	libavcodec/mpegvideo_motion.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/avassert.h:31,
+                 from libavcodec/mpegvideo_motion.c:26:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mpegvideo_parser.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/parser.h:26,
+                 from libavcodec/mpegvideo_parser.c:23:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mpegvideodsp.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/mpegvideodsp.c:21:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mpegvideoencdsp.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/avassert.h:31,
+                 from libavcodec/mpegvideoencdsp.c:24:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mpl2dec.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/mpl2dec.c:28:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/msgsmdec.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/msgsmdec.c:23:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/msmpeg4.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/msmpeg4.c:30:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/msmpeg4data.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/get_bits.h:31,
+                 from libavcodec/h263.h:25,
+                 from libavcodec/msmpeg4data.c:30:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/msmpeg4dec.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/msmpeg4dec.c:25:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/msrle.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/msrle.c:35:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/msrledec.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/msrledec.c:30:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mss1.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/mss1.c:27:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mss12.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/mss12.c:30:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mss2.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/avassert.h:31,
+                 from libavcodec/mss2.c:26:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mss2dsp.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/mss2dsp.c:27:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mss3.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/mss3.c:27:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mss34dsp.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/mss34dsp.c:23:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mss4.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/mss4.c:28:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/msvideo1.o
+In file included from ./libavutil/internal.h:39:0,
+                 from libavcodec/msvideo1.c:34:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mvcdec.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/mvcdec.c:29:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/mxpegdec.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/internal.h:33,
+                 from libavcodec/mxpegdec.c:28:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/nellymoser.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/nellymoser.h:37,
+                 from libavcodec/nellymoser.c:34:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/nellymoserdec.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/nellymoserdec.c:38:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/noise_bsf.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/noise_bsf.c:24:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/nuv.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from libavcodec/nuv.c:27:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/on2avc.o
+In file included from ./libavutil/internal.h:39:0,
+                 from libavcodec/on2avc.c:25:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/options.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/options.c:27:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+In file included from libavcodec/options.c:37:0:
+libavcodec/options_table.h:94:1: warning: 'me_method' is deprecated (declared at libavcodec/avcodec.h:1759) [-Wdeprecated-declarations]
+ {"me_method", "set motion estimation method", OFFSET(me_method), AV_OPT_TYPE_INT, {.i64 = ME_EPZS }, INT_MIN, INT_MAX, V|E, "me_method"},
+ ^
+libavcodec/options_table.h:126:1: warning: 'rc_strategy' is deprecated (declared at libavcodec/avcodec.h:1823) [-Wdeprecated-declarations]
+ {"rc_strategy", "ratecontrol method", OFFSET(rc_strategy), AV_OPT_TYPE_INT, {.i64 = DEFAULT }, INT_MIN, INT_MAX, V|E},
+ ^
+libavcodec/options_table.h:129:1: warning: 'b_frame_strategy' is deprecated (declared at libavcodec/avcodec.h:1830) [-Wdeprecated-declarations]
+ {"b_strategy", "strategy to choose between I/P/B-frames", OFFSET(b_frame_strategy), AV_OPT_TYPE_INT, {.i64 = 0 }, INT_MIN, INT_MAX, V|E},
+ ^
+libavcodec/options_table.h:130:1: warning: 'rtp_payload_size' is deprecated (declared at libavcodec/avcodec.h:2655) [-Wdeprecated-declarations]
+ {"ps", "RTP payload size in bytes", OFFSET(rtp_payload_size), AV_OPT_TYPE_INT, {.i64 = DEFAULT }, INT_MIN, INT_MAX, V|E},
+ ^
+libavcodec/options_table.h:133:1: warning: 'mv_bits' is deprecated (declared at libavcodec/avcodec.h:2666) [-Wdeprecated-declarations]
+ {"mv_bits", NULL, OFFSET(mv_bits), AV_OPT_TYPE_INT, {.i64 = DEFAULT }, INT_MIN, INT_MAX},
+ ^
+libavcodec/options_table.h:134:1: warning: 'header_bits' is deprecated (declared at libavcodec/avcodec.h:2668) [-Wdeprecated-declarations]
+ {"header_bits", NULL, OFFSET(header_bits), AV_OPT_TYPE_INT, {.i64 = DEFAULT }, INT_MIN, INT_MAX},
+ ^
+libavcodec/options_table.h:135:1: warning: 'i_tex_bits' is deprecated (declared at libavcodec/avcodec.h:2670) [-Wdeprecated-declarations]
+ {"i_tex_bits", NULL, OFFSET(i_tex_bits), AV_OPT_TYPE_INT, {.i64 = DEFAULT }, INT_MIN, INT_MAX},
+ ^
+libavcodec/options_table.h:136:1: warning: 'p_tex_bits' is deprecated (declared at libavcodec/avcodec.h:2672) [-Wdeprecated-declarations]
+ {"p_tex_bits", NULL, OFFSET(p_tex_bits), AV_OPT_TYPE_INT, {.i64 = DEFAULT }, INT_MIN, INT_MAX},
+ ^
+libavcodec/options_table.h:137:1: warning: 'i_count' is deprecated (declared at libavcodec/avcodec.h:2674) [-Wdeprecated-declarations]
+ {"i_count", NULL, OFFSET(i_count), AV_OPT_TYPE_INT, {.i64 = DEFAULT }, INT_MIN, INT_MAX},
+ ^
+libavcodec/options_table.h:138:1: warning: 'p_count' is deprecated (declared at libavcodec/avcodec.h:2676) [-Wdeprecated-declarations]
+ {"p_count", NULL, OFFSET(p_count), AV_OPT_TYPE_INT, {.i64 = DEFAULT }, INT_MIN, INT_MAX},
+ ^
+libavcodec/options_table.h:139:1: warning: 'skip_count' is deprecated (declared at libavcodec/avcodec.h:2678) [-Wdeprecated-declarations]
+ {"skip_count", NULL, OFFSET(skip_count), AV_OPT_TYPE_INT, {.i64 = DEFAULT }, INT_MIN, INT_MAX},
+ ^
+libavcodec/options_table.h:140:1: warning: 'misc_bits' is deprecated (declared at libavcodec/avcodec.h:2680) [-Wdeprecated-declarations]
+ {"misc_bits", NULL, OFFSET(misc_bits), AV_OPT_TYPE_INT, {.i64 = DEFAULT }, INT_MIN, INT_MAX},
+ ^
+libavcodec/options_table.h:141:1: warning: 'frame_bits' is deprecated (declared at libavcodec/avcodec.h:2684) [-Wdeprecated-declarations]
+ {"frame_bits", NULL, OFFSET(frame_bits), AV_OPT_TYPE_INT, {.i64 = DEFAULT }, INT_MIN, INT_MAX},
+ ^
+libavcodec/options_table.h:184:1: warning: 'mpeg_quant' is deprecated (declared at libavcodec/avcodec.h:1851) [-Wdeprecated-declarations]
+ {"mpeg_quant", "use MPEG quantizers instead of H.263", OFFSET(mpeg_quant), AV_OPT_TYPE_INT, {.i64 = DEFAULT }, INT_MIN, INT_MAX, V|E},
+ ^
+libavcodec/options_table.h:187:1: warning: 'rc_qsquish' is deprecated (declared at libavcodec/avcodec.h:2487) [-Wdeprecated-declarations]
+ {"qsquish", "deprecated, use encoder private options instead", OFFSET(rc_qsquish), AV_OPT_TYPE_FLOAT, {.dbl = DEFAULT }, 0, 99, V|E},
+ ^
+libavcodec/options_table.h:188:1: warning: 'rc_qmod_amp' is deprecated (declared at libavcodec/avcodec.h:2490) [-Wdeprecated-declarations]
+ {"rc_qmod_amp",  "deprecated, use encoder private options instead", OFFSET(rc_qmod_amp), AV_OPT_TYPE_FLOAT, {.dbl = DEFAULT }, -FLT_MAX, FLT_MAX, V|E},
+ ^
+libavcodec/options_table.h:189:1: warning: 'rc_qmod_freq' is deprecated (declared at libavcodec/avcodec.h:2492) [-Wdeprecated-declarations]
+ {"rc_qmod_freq", "deprecated, use encoder private options instead", OFFSET(rc_qmod_freq), AV_OPT_TYPE_INT, {.i64 = DEFAULT }, INT_MIN, INT_MAX, V|E},
+ ^
+libavcodec/options_table.h:193:1: warning: 'rc_eq' is deprecated (declared at libavcodec/avcodec.h:2515) [-Wdeprecated-declarations]
+ {"rc_eq", "deprecated, use encoder private options instead", OFFSET(rc_eq), AV_OPT_TYPE_STRING, {.str = NULL}, CHAR_MIN, CHAR_MAX, V|E},
+ ^
+libavcodec/options_table.h:200:1: warning: 'rc_buffer_aggressivity' is deprecated (declared at libavcodec/avcodec.h:2537) [-Wdeprecated-declarations]
+ {"rc_buf_aggressivity", "deprecated, use encoder private options instead", OFFSET(rc_buffer_aggressivity), AV_OPT_TYPE_FLOAT, {.dbl = 1.0 }, -FLT_MAX, FLT_MAX, V|E},
+ ^
+libavcodec/options_table.h:205:1: warning: 'rc_initial_cplx' is deprecated (declared at libavcodec/avcodec.h:2540) [-Wdeprecated-declarations]
+ {"rc_init_cplx", "deprecated, use encoder private options instead", OFFSET(rc_initial_cplx), AV_OPT_TYPE_FLOAT, {.dbl = DEFAULT }, -FLT_MAX, FLT_MAX, V|E},
+ ^
+libavcodec/options_table.h:250:1: warning: 'prediction_method' is deprecated (declared at libavcodec/avcodec.h:1915) [-Wdeprecated-declarations]
+ {"pred", "prediction method", OFFSET(prediction_method), AV_OPT_TYPE_INT, {.i64 = DEFAULT }, INT_MIN, INT_MAX, V|E, "pred"},
+ ^
+libavcodec/options_table.h:293:1: warning: 'pre_me' is deprecated (declared at libavcodec/avcodec.h:1995) [-Wdeprecated-declarations]
+ {"preme", "pre motion estimation", OFFSET(pre_me), AV_OPT_TYPE_INT, {.i64 = DEFAULT }, INT_MIN, INT_MAX, V|E},
+ ^
+libavcodec/options_table.h:316:1: warning: 'dtg_active_format' is deprecated (declared at libavcodec/avcodec.h:2029) [-Wdeprecated-declarations]
+ {"dtg_active_format", NULL, OFFSET(dtg_active_format), AV_OPT_TYPE_INT, {.i64 = DEFAULT }, INT_MIN, INT_MAX},
+ ^
+libavcodec/options_table.h:320:1: warning: 'intra_quant_bias' is deprecated (declared at libavcodec/avcodec.h:2052) [-Wdeprecated-declarations]
+ {"ibias", "intra quant bias", OFFSET(intra_quant_bias), AV_OPT_TYPE_INT, {.i64 = FF_DEFAULT_QUANT_BIAS }, INT_MIN, INT_MAX, V|E},
+ ^
+libavcodec/options_table.h:321:1: warning: 'inter_quant_bias' is deprecated (declared at libavcodec/avcodec.h:2058) [-Wdeprecated-declarations]
+ {"pbias", "inter quant bias", OFFSET(inter_quant_bias), AV_OPT_TYPE_INT, {.i64 = FF_DEFAULT_QUANT_BIAS }, INT_MIN, INT_MAX, V|E},
+ ^
+libavcodec/options_table.h:325:1: warning: 'coder_type' is deprecated (declared at libavcodec/avcodec.h:2576) [-Wdeprecated-declarations]
+ {"coder", NULL, OFFSET(coder_type), AV_OPT_TYPE_INT, {.i64 = DEFAULT }, INT_MIN, INT_MAX, V|E, "coder"},
+ ^
+libavcodec/options_table.h:335:1: warning: 'context_model' is deprecated (declared at libavcodec/avcodec.h:2582) [-Wdeprecated-declarations]
+ {"context", "context model", OFFSET(context_model), AV_OPT_TYPE_INT, {.i64 = DEFAULT }, INT_MIN, INT_MAX, V|E},
+ ^
+libavcodec/options_table.h:339:1: warning: 'xvmc_acceleration' is deprecated (declared at libavcodec/avcodec.h:2078) [-Wdeprecated-declarations]
+ {"xvmc_acceleration", NULL, OFFSET(xvmc_acceleration), AV_OPT_TYPE_INT, {.i64 = DEFAULT }, INT_MIN, INT_MAX},
+ ^
+libavcodec/options_table.h:346:1: warning: 'stream_codec_tag' is deprecated (declared at libavcodec/avcodec.h:1571) [-Wdeprecated-declarations]
+ {"stream_codec_tag", NULL, OFFSET(stream_codec_tag), AV_OPT_TYPE_INT, {.i64 = DEFAULT }, INT_MIN, INT_MAX},
+ ^
+libavcodec/options_table.h:349:1: warning: 'scenechange_threshold' is deprecated (declared at libavcodec/avcodec.h:2108) [-Wdeprecated-declarations]
+ {"sc_threshold", "scene change threshold", OFFSET(scenechange_threshold), AV_OPT_TYPE_INT, {.i64 = DEFAULT }, INT_MIN, INT_MAX, V|E},
+ ^
+libavcodec/options_table.h:352:1: warning: 'lmin' is deprecated (declared at libavcodec/avcodec.h:2590) [-Wdeprecated-declarations]
+ {"lmin", "deprecated, use encoder private options instead", OFFSET(lmin), AV_OPT_TYPE_INT, {.i64 =  0 }, 0, INT_MAX, V|E},
+ ^
+libavcodec/options_table.h:353:1: warning: 'lmax' is deprecated (declared at libavcodec/avcodec.h:2596) [-Wdeprecated-declarations]
+ {"lmax", "deprecated, use encoder private options instead", OFFSET(lmax), AV_OPT_TYPE_INT, {.i64 =  0 }, 0, INT_MAX, V|E},
+ ^
+libavcodec/options_table.h:356:1: warning: 'noise_reduction' is deprecated (declared at libavcodec/avcodec.h:2112) [-Wdeprecated-declarations]
+ {"nr", "noise reduction", OFFSET(noise_reduction), AV_OPT_TYPE_INT, {.i64 = DEFAULT }, INT_MIN, INT_MAX, V|E},
+ ^
+libavcodec/options_table.h:361:1: warning: 'error_rate' is deprecated (declared at libavcodec/avcodec.h:3158) [-Wdeprecated-declarations]
+ {"error", NULL, OFFSET(error_rate), AV_OPT_TYPE_INT, {.i64 = DEFAULT }, INT_MIN, INT_MAX, V|E},
+ ^
+libavcodec/options_table.h:366:1: warning: 'me_threshold' is deprecated (declared at libavcodec/avcodec.h:2120) [-Wdeprecated-declarations]
+ {"me_threshold", "motion estimation threshold", OFFSET(me_threshold), AV_OPT_TYPE_INT, {.i64 = DEFAULT }, INT_MIN, INT_MAX, V|E},
+ ^
+libavcodec/options_table.h:367:1: warning: 'mb_threshold' is deprecated (declared at libavcodec/avcodec.h:2126) [-Wdeprecated-declarations]
+ {"mb_threshold", "macroblock threshold", OFFSET(mb_threshold), AV_OPT_TYPE_INT, {.i64 = DEFAULT }, INT_MIN, INT_MAX, V|E},
+ ^
+libavcodec/options_table.h:398:1: warning: 'frame_skip_threshold' is deprecated (declared at libavcodec/avcodec.h:2602) [-Wdeprecated-declarations]
+ {"skip_threshold", "frame skip threshold", OFFSET(frame_skip_threshold), AV_OPT_TYPE_INT, {.i64 = DEFAULT }, INT_MIN, INT_MAX, V|E},
+ ^
+libavcodec/options_table.h:399:1: warning: 'frame_skip_factor' is deprecated (declared at libavcodec/avcodec.h:2606) [-Wdeprecated-declarations]
+ {"skip_factor", "frame skip factor", OFFSET(frame_skip_factor), AV_OPT_TYPE_INT, {.i64 = DEFAULT }, INT_MIN, INT_MAX, V|E},
+ ^
+libavcodec/options_table.h:400:1: warning: 'frame_skip_exp' is deprecated (declared at libavcodec/avcodec.h:2610) [-Wdeprecated-declarations]
+ {"skip_exp", "frame skip exponent", OFFSET(frame_skip_exp), AV_OPT_TYPE_INT, {.i64 = DEFAULT }, INT_MIN, INT_MAX, V|E},
+ ^
+libavcodec/options_table.h:401:1: warning: 'frame_skip_cmp' is deprecated (declared at libavcodec/avcodec.h:2614) [-Wdeprecated-declarations]
+ {"skipcmp", "frame skip compare function", OFFSET(frame_skip_cmp), AV_OPT_TYPE_INT, {.i64 = FF_CMP_DCTMAX }, INT_MIN, INT_MAX, V|E, "cmp_func"},
+ ^
+libavcodec/options_table.h:404:1: warning: 'border_masking' is deprecated (declared at libavcodec/avcodec.h:2155) [-Wdeprecated-declarations]
+ {"border_mask", "deprecated, use encoder private options instead", OFFSET(border_masking), AV_OPT_TYPE_FLOAT, {.dbl = DEFAULT }, -FLT_MAX, FLT_MAX, V|E},
+ ^
+libavcodec/options_table.h:409:1: warning: 'me_penalty_compensation' is deprecated (declared at libavcodec/avcodec.h:2177) [-Wdeprecated-declarations]
+ {"mepc", "motion estimation bitrate penalty compensation (1.0 = 256)", OFFSET(me_penalty_compensation), AV_OPT_TYPE_INT, {.i64 = 256 }, INT_MIN, INT_MAX, V|E},
+ ^
+libavcodec/options_table.h:423:1: warning: 'brd_scale' is deprecated (declared at libavcodec/avcodec.h:2190) [-Wdeprecated-declarations]
+ {"brd_scale", "downscale frames for dynamic B-frame decision", OFFSET(brd_scale), AV_OPT_TYPE_INT, {.i64 = DEFAULT }, 0, 10, V|E},
+ ^
+libavcodec/options_table.h:428:1: warning: 'chromaoffset' is deprecated (declared at libavcodec/avcodec.h:2210) [-Wdeprecated-declarations]
+ {"chromaoffset", "chroma QP offset from luma", OFFSET(chromaoffset), AV_OPT_TYPE_INT, {.i64 = DEFAULT }, INT_MIN, INT_MAX, V|E},
+ ^
+libavcodec/options_table.h:432:1: warning: 'scenechange_factor' is deprecated (declared at libavcodec/avcodec.h:2219) [-Wdeprecated-declarations]
+ {"sc_factor", "multiplied by qscale for each frame and added to scene_change_score", OFFSET(scenechange_factor), AV_OPT_TYPE_INT, {.i64 = 6 }, 0, INT_MAX, V|E},
+ ^
+libavcodec/options_table.h:436:1: warning: 'b_sensitivity' is deprecated (declared at libavcodec/avcodec.h:2233) [-Wdeprecated-declarations]
+ {"b_sensitivity", "adjust sensitivity of b_frame_strategy 1", OFFSET(b_sensitivity), AV_OPT_TYPE_INT, {.i64 = 40 }, 1, INT_MAX, V|E},
+ ^
+libavcodec/options_table.h:440:1: warning: 'min_prediction_order' is deprecated (declared at libavcodec/avcodec.h:2627) [-Wdeprecated-declarations]
+ {"min_prediction_order", NULL, OFFSET(min_prediction_order), AV_OPT_TYPE_INT, {.i64 = -1 }, INT_MIN, INT_MAX, A|E},
+ ^
+libavcodec/options_table.h:441:1: warning: 'max_prediction_order' is deprecated (declared at libavcodec/avcodec.h:2631) [-Wdeprecated-declarations]
+ {"max_prediction_order", NULL, OFFSET(max_prediction_order), AV_OPT_TYPE_INT, {.i64 = -1 }, INT_MIN, INT_MAX, A|E},
+ ^
+libavcodec/options_table.h:442:1: warning: 'timecode_frame_start' is deprecated (declared at libavcodec/avcodec.h:2635) [-Wdeprecated-declarations]
+ {"timecode_frame_start", "GOP timecode frame start number, in non-drop-frame format", OFFSET(timecode_frame_start), AV_OPT_TYPE_INT64, {.i64 = -1 }, -1, INT64_MAX, V|E},
+ ^
+libavcodec/options_table.h:524:1: warning: 'side_data_only_packets' is deprecated (declared at libavcodec/avcodec.h:3186) [-Wdeprecated-declarations]
+ {"side_data_only_packets", NULL, OFFSET(side_data_only_packets), AV_OPT_TYPE_BOOL, { .i64 = 1 }, 0, 1, A|V|E },
+ ^
+libavcodec/options.c: In function 'avcodec_copy_context':
+libavcodec/options.c:218:5: warning: 'coded_frame' is deprecated (declared at libavcodec/avcodec.h:2945) [-Wdeprecated-declarations]
+     dest->coded_frame     = NULL;
+     ^
+CC	libavcodec/opus.o
+In file included from ./libavutil/internal.h:39:0,
+                 from libavcodec/opus.c:30:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/opus_celt.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/audio_fifo.h:30,
+                 from libavcodec/opus.h:28,
+                 from libavcodec/opus_celt.c:33:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/opus_parser.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/opus_parser.c:28:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/opus_silk.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/audio_fifo.h:30,
+                 from libavcodec/opus.h:28,
+                 from libavcodec/opus_silk.c:29:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/opusdec.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/audio_fifo.h:30,
+                 from libavcodec/opusdec.c:39:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/pafaudio.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/pafaudio.c:24:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/pafvideo.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/imgutils.h:30,
+                 from libavcodec/pafvideo.c:22:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/parser.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/avassert.h:31,
+                 from libavcodec/parser.c:26:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+In file included from ./libavutil/atomic.h:29:0,
+                 from libavcodec/parser.c:27:
+./libavutil/atomic_gcc.h: In function 'atomic_int_get_gcc':
+./libavutil/atomic_gcc.h:31:5: warning: "HAVE_ATOMIC_COMPARE_EXCHANGE" is not defined [-Wundef]
+ #if HAVE_ATOMIC_COMPARE_EXCHANGE
+     ^
+./libavutil/atomic_gcc.h: In function 'atomic_int_set_gcc':
+./libavutil/atomic_gcc.h:42:5: warning: "HAVE_ATOMIC_COMPARE_EXCHANGE" is not defined [-Wundef]
+ #if HAVE_ATOMIC_COMPARE_EXCHANGE
+     ^
+./libavutil/atomic_gcc.h: In function 'atomic_int_add_and_fetch_gcc':
+./libavutil/atomic_gcc.h:53:5: warning: "HAVE_ATOMIC_COMPARE_EXCHANGE" is not defined [-Wundef]
+ #if HAVE_ATOMIC_COMPARE_EXCHANGE
+     ^
+In file included from libavcodec/parser.c:27:0:
+./libavutil/atomic.h: At top level:
+./libavutil/atomic.h:30:7: warning: "HAVE_ATOMICS_WIN32" is not defined [-Wundef]
+ #elif HAVE_ATOMICS_WIN32
+       ^
+./libavutil/atomic.h:32:7: warning: "HAVE_ATOMICS_SUNCC" is not defined [-Wundef]
+ #elif HAVE_ATOMICS_SUNCC
+       ^
+libavcodec/parser.c: In function 'av_parser_init':
+libavcodec/parser.c:88:5: warning: 'convergence_duration' is deprecated (declared at libavcodec/avcodec.h:4477) [-Wdeprecated-declarations]
+     s->convergence_duration = 0;
+     ^
+CC	libavcodec/pcm-bluray.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/pcm-bluray.c:28:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/pcm-dvd.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/pcm-dvd.c:27:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/pcm.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/pcm.c:28:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+libavcodec/pcm.c:34:20: warning: 'pcm_encode_init' defined but not used [-Wunused-function]
+ static av_cold int pcm_encode_init(AVCodecContext *avctx)
+                    ^
+libavcodec/pcm.c:83:12: warning: 'pcm_encode_frame' defined but not used [-Wunused-function]
+ static int pcm_encode_frame(AVCodecContext *avctx, AVPacket *avpkt,
+            ^
+CC	libavcodec/pcx.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/imgutils.h:30,
+                 from libavcodec/pcx.c:25:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/pgssubdec.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/pgssubdec.c:27:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+libavcodec/pgssubdec.c: In function 'display_end_segment':
+libavcodec/pgssubdec.c:596:13: warning: 'pict' is deprecated (declared at libavcodec/avcodec.h:3710) [-Wdeprecated-declarations]
+             rect->pict.data[j] = rect->data[j];
+             ^
+libavcodec/pgssubdec.c:596:13: warning: 'data' is deprecated (declared at libavcodec/avcodec.h:3668) [-Wdeprecated-declarations]
+libavcodec/pgssubdec.c:597:13: warning: 'pict' is deprecated (declared at libavcodec/avcodec.h:3710) [-Wdeprecated-declarations]
+             rect->pict.linesize[j] = rect->linesize[j];
+             ^
+libavcodec/pgssubdec.c:597:13: warning: 'linesize' is deprecated (declared at libavcodec/avcodec.h:3670) [-Wdeprecated-declarations]
+CC	libavcodec/pictordec.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/imgutils.h:30,
+                 from libavcodec/pictordec.c:27:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/pixblockdsp.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/pixblockdsp.c:24:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/png.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/png.c:21:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/png_parser.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/samplefmt.h:24,
+                 from libavcodec/avcodec.h:31,
+                 from libavcodec/parser.h:26,
+                 from libavcodec/png_parser.c:27:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+CC	libavcodec/pngdec.o
+In file included from ./libavutil/internal.h:39:0,
+                 from ./libavutil/common.h:467,
+                 from ./libavutil/avutil.h:288,
+                 from ./libavutil/avassert.h:31,
+                 from libavcodec/pngdec.c:24:
+./libavutil/timer.h:54:10: warning: "HAVE_MACH_ABSOLUTE_TIME" is not defined [-Wundef]
+ #   elif HAVE_MACH_ABSOLUTE_TIME
+          ^
+libavcodec/pngdec.c:37:18: fatal error: zlib.h: No such file or directory
+ #include <zlib.h>
+                  ^
+compilation terminated.
+common.mak:60: recipe for target 'libavcodec/pngdec.o' failed
+make[1]: *** [libavcodec/pngdec.o] Error 1
+make[1]: Leaving directory '/home/fishman/GP/mplayer+live555/MPlayer-1.3.0/ffmpeg'
+Makefile:740: recipe for target 'ffmpeg/libavcodec/libavcodec.a' failed
+make: *** [ffmpeg/libavcodec/libavcodec.a] Error 2
